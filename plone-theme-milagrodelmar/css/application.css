@@ -18,13 +18,31 @@
 .navbar .brand {
     display: none;
 }
+.content-columns{
+   color:white;
+}
 body {
+    color:white;
     background: #40631F url("img/forground.gif") no-repeat scroll center top;
     margin: 0 auto;
-    overflow:hidden;
-
+    overflow:hidden; 
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
-
+a{
+    color:#ff5c00;
+}
+#content .pullquote {
+    color:#ffffff;   
+}
+#content .discreet, #sidebar .discreet {
+    color:white;  
+}
+#content div.documentByLine {
+    color:white;   
+}
+#content .documentDescription, #content #description {
+    color:white;
+}
 .navbar-fixed-top, .navbar-fixed-bottom {
     left: 0;
     margin-bottom: 0;
@@ -35,7 +53,6 @@ body {
 .navbar-inner {
     background:#40631F url("img/grades.gif") repeat-x scroll left top;
     min-width: 1040px;
-    box-shadow: none;
     min-height:0;
 }
 #header {
@@ -44,6 +61,7 @@ body {
     position: relative;
     margin:0;
 }
+
 .container {
     margin: 0 auto;
 }
@@ -61,4 +79,65 @@ body {
     background: #143508 none repeat scroll 0 0;
     height: 50px;
     padding: 0;
+}
+.cell{
+    background:url("img/footer.gif") repeat;
+}
+#doormat-container{
+    background: transparent none no-repeat;
+}
+.doormatSection{
+    float:left;
+    padding-left:40px;
+    padding-top:20px;
+}
+.row{
+    margin:0;
+}
+.column-0 p{
+    color: #F7F5E9;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1.3em;
+    text-transform: uppercase;
+}
+.column-0 a{
+    color: #D2DB81;
+    font-size: 1.2em;
+    line-height: 1.3em;    
+}
+.column-1 p{
+    color: #F7F5E9;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1.3em;
+    text-transform: uppercase;
+}
+.column-1 a{
+    color: #D2DB81;
+    font-size: 1.2em;
+    line-height: 1.3em;    
+}
+.column-2 p{
+    color: #D2DB81;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+.column-2 a{
+    float:right;
+    color: #D2DB81;
+    font-size: 1.2em;
+    line-height: 1.3em;    
+}
+.ploneCalendar .weekdays th{
+    color:#ff5c00;
+}
+.breadcrumb{
+    color:red;   
+}
+#left-column{
+    margin-left:0;
+}
+.footer {
+    text-shadow: none;
 }
