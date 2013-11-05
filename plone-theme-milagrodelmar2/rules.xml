@@ -6,9 +6,8 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"
     >
 
-    <replace
-        css:theme="div#test3"
-        css:content="h1.documentFirstHeading"
+    <drop
+        css:theme="img#logo"
         />
 
     <replace
@@ -31,17 +30,16 @@
         css:content="body"
         css:theme="div#test1"
         />
-    
+        
     <copy
         attributes="href"
         css:content="#portal-logo"
         css:theme="a#home"
         />    
-
+        
     <!--<drop
         css:content="a#portal-logo img"
         />-->
-
 
     <replace
         css:theme="p#companycode"
