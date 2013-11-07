@@ -6,10 +6,6 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"
     >
 
-    <drop
-        css:theme="img#logo"
-        />
-
     <replace
         css:theme="div#test2"
         css:content="a#portal-logo img"
@@ -18,24 +14,7 @@
 
     <!--<drop
         css:content="h1.documentFirstHeading"
-        />-->
-
-    <replace
-        css:theme="div#searchbox"
-        css:content="#portal-searchbox"
-        />
-
-    <copy
-        attributes="class"
-        css:content="body"
-        css:theme="div#test1"
-        />
-        
-    <copy
-        attributes="href"
-        css:content="#portal-logo"
-        css:theme="a#home"
-        />    
+        />-->   
         
     <!--<drop
         css:content="a#portal-logo img"

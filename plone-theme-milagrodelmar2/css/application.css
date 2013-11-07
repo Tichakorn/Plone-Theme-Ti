@@ -45,7 +45,7 @@ a{
 }
 .navbar-fixed-top, .navbar-fixed-bottom {
     left: 0;
-    top:300px;
+    top:200px;
     margin-bottom: 0;
     position: relative;
     right: 0;
@@ -63,6 +63,7 @@ a{
     position: relative;
     margin:0;
     bottom:39px;
+    top:-30px
 }
 
 #header img{
@@ -148,4 +149,27 @@ a{
 }
 .footer {
     text-shadow: none;
+}
+#navigation{
+    height:35px;   
+    text-align:right;  
+}
+#social{
+    float:right;   
+    position: absolute;
+    right: 16px;
+    top: 14px;
+}
+#social img{
+    float:left;
+
+}
+#nica{
+    float:right;   
+    position: absolute;
+    right: 16px;
+    bottom: 19px;
+}
+#navigation p{
+    margin:12px;   
 }
