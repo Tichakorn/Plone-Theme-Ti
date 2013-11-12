@@ -6,19 +6,21 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"
     >
 
+    <drop
+        css:content="div.lastCarousel"
+        />
+
+    <replace
+        css:content=".lastCarousel"
+        css:theme="#topslider"
+        method="raw"
+        />
+
     <replace
         css:theme="div#test2"
         css:content="a#portal-logo img"
         method="raw"
         />
-
-    <!--<drop
-        css:content="h1.documentFirstHeading"
-        />-->   
-        
-    <!--<drop
-        css:content="a#portal-logo img"
-        />-->
 
     <replace
         css:theme="p#companycode"
