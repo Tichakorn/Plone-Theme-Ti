@@ -158,9 +158,8 @@ div.scrollable div.items div.itemPadding{
 }
 #header {
     background: url("img/header_white2.jpg") repeat;
-    height: 116px;
+    height: 117px;
     margin:0;
-    bottom:1px;
     position: relative;
 
 }
@@ -267,7 +266,7 @@ div.position-0{
     border:0;   
 }
 #topheader{
-    min-height:45px;   
+    min-height:44px;   
     text-align:right;  
     background:radial-gradient(at 60% top , #FFFFFF, #F6F4E8, #CBC299);
 }
@@ -280,7 +279,7 @@ div.position-0{
 }
 #topheader p{
     color: #8EB048;
-    line-height: 45px;
+    line-height: 44px;
     margin-right: 16px;
     text-align: right;  
     margin-bottom:0;
@@ -294,22 +293,124 @@ div.position-0{
 div.width-full{
     width:100%;   
 }
-@media (min-width: 1200px) {
-    
-   .container,
-   .navbar-fixed-top .container,
-   .navbar-fixed-bottom .container {
+ul#nav li:last-child a{
+    border:0 none;   
+}
+#listbackground{
+    width:100%;
+    height:379px;
+    background:url("img/listimagebackground.jpg") no-repeat scroll center top;
+    position:absolute;
+    top:161px;
+}
+.listbackground2{
+    margin:0;
+    top:161;
+}
+    [class*="span"]{
+        margin:0;   
+    }
+    #right-column-content{
+        padding:0 30px;
+        border:0;
+    }
+    #right-column-content h4{
+        background:#143508;
+        line-height:57px;
+        color:#ffffff;
+    }
+    #right-column-content h2{
+        padding:0 22px 10px;
+        color:#D2DB81;
+        font-size:15px;
+        line-height:1.3em;
+        font-weight:normal;
+    }
+    #right-column-content h3{
+        text-transform:uppercase;
+        padding:0 22px;
+        padding-top:6px;
+        color:#254A14;
+        font-size:15px;
+        font-weight:bold;
+        line-height:1em;
+    }
+    #right-column-content section{
+        box-shadow:0 0 13px -1px #000000;
+        margin:25px 0;
+    }
+    #right-column-content p{
+        padding:4px 22px;
+        color:#F7F5E9;
+        margin:0;
+        font-size:13px;
+        line-height:1.3em;        
+    }
+    #right-column-content a{
+        text-transform:uppercase;  
+        color:#D2DB81;
+        font-size:15px;
+        line-height:1.3em;
+    }
+    #right-column-content .portletItem{
+        background:#40631F;
+    }
+    #left-column-content{
+        border:0;
+        padding:20px 35px 20px 40px;
+    }
+    .portlet-footer{
+        border:0;   
+    }
+@media (min-width: 1200px) {    
+    .container,
+    .navbar-fixed-top .container,
+    .navbar-fixed-bottom .container {
         width: 1040px;
-  }
-   .span12 {
+    }
+    .span12 {
         width: 1040px;
-  }
+    }
+    .span3{
+        width:25%;   
+    }
+    .twocolumns{
+        width:70%;
+    }
+    .threecolumns{
+        width:50%   
+    }
+}
+@media (min-width: 980px) and (max-width: 1199px){ 
+    .container,
+    .navbar-fixed-top .container,
+    .navbar-fixed-bottom .container {
+        width: 940px;
+    }
+    .span12 {
+        width: 940px;
+    }
+    #left-column{
+        width:100%;   
+    }
+    .twocolumns{
+        width:100%;
+    }
+    .threecolumns{
+        width:100%   
+    }
 }
 @media (min-width: 768px) and (max-width: 979px) {
     .container,
     .navbar-fixed-top .container,
     .navbar-fixed-bottom .container {
         width: 724px;
+    }
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{
+        padding:0;   
+    }
+    #navibar{
+        height:50px;   
     }
     .span12 {
         width: 724px;
@@ -336,6 +437,15 @@ div.width-full{
     #topsearchbox{
         display:none;
     }
+    .span3{
+        width:100%;   
+    }
+    .twocolumns{
+        width:100%;
+    }
+    .threecolumns{
+        width:100%   
+    }
 }
 @media (max-width: 767px){
     .collapse.in{
@@ -344,6 +454,12 @@ div.width-full{
         height:auto; 
         top:16px;
         padding:5px;
+    }
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{
+        padding:0;   
+    }
+    #navibar{
+        height:50px;   
     }
     .navbar .nav .active{
         float:none;   
@@ -359,5 +475,17 @@ div.width-full{
     }
     #topsearchbox{
         display:none;
+    }
+    #portal-logo{
+        display:none;
+    }
+    .span3{
+        width:100%;   
+    }
+    .twocolumns{
+        width:100%;
+    }
+    .threecolumns{
+        width:100%   
     }
 }

@@ -7,7 +7,7 @@
     >
 
     <drop
-        css:content="div.lastCarousel"
+        css:content=".lastCarousel"
         />
 
     <replace
@@ -59,6 +59,8 @@
     <notheme css:if-content="#content.dialog-wrapper"/>
     <notheme css:if-content="body.popup"/>
     -->
+    <notheme css:if-content="html.flexbox"/>
+    
     <rules css:if-content="#visual-portal-wrapper">
    
    
@@ -116,6 +118,7 @@
                     </xsl:for-each>
                 </div>
             </xsl:if>
+            <!--
             <div id="#viewlet-above-content">
                 <xsl:for-each css:select="#viewlet-above-content > *">
                     <xsl:if test="@id">
@@ -128,7 +131,7 @@
                         <xsl:copy-of select="current()"/>
                     </xsl:if>
                 </xsl:for-each>
-            </div>
+            </div>-->
             <article>
                 <xsl:copy-of css:select="#kssPortalMessage"/>
                 <xsl:copy-of css:select=".portalMessage"/>
