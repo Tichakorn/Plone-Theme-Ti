@@ -6,6 +6,15 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"
     >
 
+    <drop
+        css:content="a#portal-logo img"
+        />
+
+    <copy
+        attributes="class"
+        css:content="body"
+        css:theme="div#global-wrapper"
+    />
 
     <drop
         css:content=".lastCarousel"
