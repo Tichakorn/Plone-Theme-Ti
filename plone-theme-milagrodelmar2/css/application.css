@@ -82,27 +82,30 @@ body {
 }
 .column-1 p{
     color: #F7F5E9;
-    font-size: 1.3em;
+    font-size: 13px;
     font-weight: bold;
-    line-height: 1.3em;
+    line-height: 16.9px;
     text-transform: uppercase;
     margin:0;
 }
 .column-1 a{
     color: #D2DB81;
-    font-size: 1.3em;
-    line-height: 1.3em;    
+    font-size: 13px;
+    line-height: 16.9px;    
 }
 .column-2 p{
     color: #D2DB81;
-    font-size: 1.3em;
-    line-height: 1.3em;
+    font-size: 13px;
+    line-height: 16.9px;
     margin:0;
 }
 .column-2 a{
     color: #D2DB81; 
     font-size: 13px;
     line-height: 16.9px;
+}
+.column-2 .external-link{
+    border-bottom:1px solid;   
 }
 .dropdown-menu{
     border:none;   
@@ -126,7 +129,8 @@ ul.dropdown-menu li{
     margin:0;
 } 
 #doormat-container dl dd{
-    line-height:1.3em;   
+    line-height:16.9px; 
+    font-size: 13px;
 }
 #doormat-container .doormatColumn{
     margin:0;   
@@ -137,6 +141,9 @@ ul.dropdown-menu li{
 #doormat-container.columns-3 .doormatColumn{
     width:auto;   
 }
+#doormat-container .column-2 .external-link{;
+    padding-bottom:3px;
+}
 .doormatSection{
     float:left;
     padding-left:40px;
@@ -145,7 +152,8 @@ ul.dropdown-menu li{
 .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover{
     background:none;   
 }
-#facebook{
+
+#facebook{    
     margin-top:3px;
     margin-left: 9px;
     background:url("img/f2.png");
@@ -155,6 +163,7 @@ ul.dropdown-menu li{
     display:none;   
 }
 .footer {
+    float:left;
     text-shadow: none;
     color:#D2DB81;
     border-top-width:0;
@@ -165,9 +174,9 @@ ul.dropdown-menu li{
 }
 .footer h3{
     color: #F7F5E9;
-    font-size: 1.3em;
+    font-size: 13px;
     font-weight: bold;
-    line-height: 1.3em;
+    line-height: 16.9px;
     text-transform: uppercase;
 }
 #doormat-container h3{
@@ -199,7 +208,11 @@ ul.dropdown-menu li{
     height: 116px;
     margin:0;
     position: relative;
-
+}
+.image-inline{
+    height:23px;
+    margin-top:10px;
+    margin-right:4px;
 }
 #left-column-content a{
     line-height: 1.1em; 
@@ -219,6 +232,9 @@ ul.dropdown-menu li{
 }
 #main{   
     margin:0;
+}
+#movelogin{
+    padding-top:20px
 }
 .navi{
     display:none;   
@@ -298,12 +314,19 @@ ul.dropdown-menu li{
 .ploneCalendar .weekdays th{
     color:#ff5c00;
 }
+#portal-personaltools{
+    margin:20px 0 0 0; 
+    padding:0;
+}
 div.position-0{
     margin-left:-100%
 }
 .row{
     background: url("img/content2.jpg") repeat-y;
     margin:0;   
+}
+#right-column-content .portlet h4{
+    line-height:57px;   
 }
 .section-front-page #topheader{
     background:none;   
@@ -472,79 +495,80 @@ ul#nav li:last-child a{
     margin:0;
     top:161;
 }
-    [class*="span"]{
-        margin:0;   
-    }
-    #right-column-content{
-        padding:0 30px;
-        border:0;
-    }
-    #right-column-content .portlet-static-book-a-vacation h4{
-        background:url("img/spot1new.jpg");
-        line-height:57px;
-        color:#ffffff;
-        font-size:0;
-        border-top-left-radius:8px;
-        border-top-right-radius:8px;
-    }
-    #right-column-content .portlet-static-understanding h4{
-        background:url("img/spot2new.jpg");
-        line-height:57px;
-        color:#ffffff;
-        font-size:0;
-        border-top-left-radius:8px;
-        border-top-right-radius:8px;
-    }
-    #right-column-content .portlet-static-unsurpassed-quality-of-life h4{
-        background:url("img/spot3new.jpg");
-        line-height:57px;
-        color:#ffffff;
-        font-size:0;
-        border-top-left-radius:8px;
-        border-top-right-radius:8px;
-    }
-    #right-column-content h2{
-        padding:0 22px 10px;
-        color:#D2DB81;
-        font-size:15px;
-        line-height:1.3em;
-        font-weight:normal;
-    }
-    #right-column-content h3{
-        text-transform:uppercase;
-        padding:0 22px;
-        padding-top:6px;
-        color:#254A14;
-        font-size:15px;
-        font-weight:bold;
-        line-height:1em;
-    }
-    #right-column-content section{
-        box-shadow:0 0 13px -1px #000000;
-        margin:25px 0;
-        border-radius:8px;
-        background:url("img/spotlight.gif") repeat-x scroll left 57px #456E20;
-    }
-    #right-column-content p{
-        padding:4px 22px;
-        color:#F7F5E9;
-        margin:0;
-        font-size:13px;
-        line-height:1.3em;        
-    }
-    #right-column-content a{
-        text-transform:uppercase;  
-        color:#D2DB81;
-        font-size:15px;
-        line-height:1.3em;
-    }
-    #left-column-content{
-        border:0;
-        padding:20px 35px 20px 40px;
-    }
-    .portlet-footer{
-        border:0;   
-    }
+[class*="span"]{
+    margin:0;   
+}
+#right-column-content{
+    padding-left:30px;
+    padding-right:31px;
+    border:0;
+}
+#right-column-content .portlet-static-book-a-vacation h4{
+    background:url("img/spot1new.jpg");
+    line-height:57px;
+    color:#ffffff;
+    font-size:0;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+}
+#right-column-content .portlet-static-understanding h4{
+    background:url("img/spot2new.jpg");
+    line-height:57px;
+    color:#ffffff;
+    font-size:0;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+}
+#right-column-content .portlet-static-unsurpassed-quality-of-life h4{
+    background:url("img/spot3new.jpg");
+    line-height:57px;
+    color:#ffffff;
+    font-size:0;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+}
+#right-column-content h2{
+    padding:0 22px 10px;
+    color:#D2DB81;
+    font-size:15px;
+    line-height:1.3em;
+    font-weight:normal;
+}
+#right-column-content h3{
+    text-transform:uppercase;
+    padding:0 22px;
+    padding-top:6px;
+    color:#254A14;
+    font-size:15px;
+    font-weight:bold;
+    line-height:1em;
+}
+#right-column-content section{
+    box-shadow:0 0 13px -1px #000000;
+    margin:25px 0;
+    border-radius:8px;
+    background:url("img/spotlight.gif") repeat-x scroll left 57px #456E20;
+}
+#right-column-content p{
+    padding:4px 22px;
+    color:#F7F5E9;
+    margin:0;
+    font-size:13px;
+    line-height:1.3em;        
+}
+#right-column-content a{
+    text-transform:uppercase;  
+    color:#D2DB81;
+    font-size:15px;
+    line-height:1.3em;
+}
+#left-column-content{
+    border:0;
+    padding:20px 35px 20px 40px;
+}
+.portlet-footer{
+    border:0;   
+}
 @media (min-width: 1200px) {    
     .container,
     .navbar-fixed-top .container,
@@ -554,6 +578,9 @@ ul#nav li:last-child a{
     #facebook,#twitter{
         width:31px;
         float:left;
+    }
+    .footer{
+        width:85%;   
     }
     #preview{
         width:93px;
@@ -583,6 +610,9 @@ ul#nav li:last-child a{
         width:31px;
         float:left;
     }
+    .footer{
+        width:85%;   
+    }
     #preview{
         width:93px;
         float:left;
@@ -610,6 +640,9 @@ ul#nav li:last-child a{
     #facebook,#twitter{
         width:31px;
         float:left;
+    }
+    .footer{
+        width:85%;   
     }
     #preview{
         width:93px;
@@ -668,6 +701,9 @@ ul#nav li:last-child a{
         width:31px;
         float:left;
     }
+    .footer{
+        width:85%;   
+    }
     #preview{
         width:93px;
         float:left;
@@ -698,6 +734,9 @@ ul#nav li:last-child a{
     }
     #center-column{
         width:100%;
+    }
+    #bottom-content{
+        width:100%;    
     }
     #content-columns{
         width:100%;   

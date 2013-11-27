@@ -6,6 +6,22 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"
     >
 
+    <!--<drop
+        css:theme="ul#secondary-nav"
+        />-->
+        
+    <replace
+        css:content="ul#portal-personaltools"
+        css:theme="div#movelogin2"
+        method="raw"
+        />
+
+    <replace
+        css:content="dl#portal-personaltools"
+        css:theme="div#movelogin"
+        method="raw"
+        />
+
     <drop
         css:content="a#portal-logo img"
         />
