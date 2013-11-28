@@ -104,8 +104,20 @@ body {
     font-size: 13px;
     line-height: 16.9px;
 }
-.column-2 .external-link{
-    border-bottom:1px solid;   
+.column-2 .doormatSectionBody:first-of-type{
+    border:none;  
+    margin-bottom:0;
+    padding-bottom:0;
+}
+.column-2 .doormatSectionBody{
+    border-bottom:1px solid; 
+    padding-bottom:3px;
+    margin-bottom:5px;
+}
+.column-2 .doormatSectionBody:last-of-type{
+    border:none;  
+    margin-bottom:0;
+    padding-bottom:0;
 }
 .dropdown-menu{
     border:none;   
@@ -154,7 +166,7 @@ ul.dropdown-menu li{
 }
 
 #facebook{    
-    margin-top:3px;
+    margin-top:4px;
     margin-left: 9px;
     background:url("img/f2.png");
     height:31px;
@@ -211,7 +223,6 @@ ul.dropdown-menu li{
 }
 .image-inline{
     height:23px;
-    margin-top:10px;
     margin-right:4px;
 }
 #left-column-content a{
@@ -317,6 +328,14 @@ ul.dropdown-menu li{
 #portal-personaltools{
     margin:20px 0 0 0; 
     padding:0;
+    background:none;
+    color:#D2DB81;
+}
+#portal-personaltools a{
+    color:#D2DB81;
+}
+#portal-personaltools dd{
+    background:#143508;   
 }
 div.position-0{
     margin-left:-100%
@@ -349,6 +368,12 @@ div.position-0{
 .section-front-page .navbar .nav > li > a:hover {
     color:#D2DB81;  
     padding:0 15px;
+}
+.section-front-page #social{  
+    position: relative;
+    right: 16px;
+    top: 14px;
+    float:right;
 }
 .section-front-page #facebook{
     margin-top:3px;
@@ -433,6 +458,7 @@ div.position-0{
     right: 16px;
     top: 14px;
     float:right;
+    margin-right:1px;
 }
 #s{
     background:url("img/s2.png");
@@ -454,7 +480,7 @@ div.position-0{
 }
 #twitter{
     margin-left: 10px;
-    margin-top:3px;
+    margin-top:4px;
     background:url("img/t2.png");
     height:31px;
 }
@@ -611,7 +637,7 @@ ul#nav li:last-child a{
         float:left;
     }
     .footer{
-        width:85%;   
+        width:50%;   
     }
     #preview{
         width:93px;
@@ -642,7 +668,7 @@ ul#nav li:last-child a{
         float:left;
     }
     .footer{
-        width:85%;   
+        width:50%;   
     }
     #preview{
         width:93px;
@@ -702,7 +728,7 @@ ul#nav li:last-child a{
         float:left;
     }
     .footer{
-        width:85%;   
+        width:50%;   
     }
     #preview{
         width:93px;
