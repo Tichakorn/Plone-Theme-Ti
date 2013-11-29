@@ -6,6 +6,7 @@ body {
     background: #40631F url("img/headerbackground.jpg") no-repeat scroll center top;
     margin: 0 auto; 
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+    line-height:20px;
 }
 .border a{
     border-left:1px solid #D2DB81;
@@ -45,8 +46,14 @@ body {
     background-color:#40631F;
     line-height:10px;
 }
+#center-column p{
+    font-size:14px;   
+}
 .content-columns{
-   color:white;
+    color:white;
+}
+#container{
+    background:#40631F;
 }
 .container a{
     color:#8EB048;
@@ -56,6 +63,7 @@ body {
 }
 #content .discreet, #sidebar .discreet {
     color:#4C432D;  
+    font-size:14px;
 }
 #content div.documentByLine {
     color:#4C432D;   
@@ -118,6 +126,12 @@ body {
     border:none;  
     margin-bottom:0;
     padding-bottom:0;
+}
+.column-2 .doormatSectionBody:last-of-type a:last-of-type img{
+    height:26px;
+}
+.collapse{
+    height:auto;   
 }
 .dropdown-menu{
     border:none;   
@@ -190,6 +204,11 @@ ul.dropdown-menu li{
     font-weight: bold;
     line-height: 16.9px;
     text-transform: uppercase;
+}
+.form-rows span.option{
+    width:49%;
+    float:left;
+    clear:none;
 }
 #doormat-container h3{
     margin:0;   
@@ -354,7 +373,10 @@ div.position-0{
     color:#F7F5E9;
 }
 .section-front-page #topheader a{
-    color:#F7F5E9;
+    color:#F7F5E9;    
+}
+.section-front-page #topheader a:first-child{
+    display:none;
 }
 .section-front-page #topheader p a:hover {
     color: #D2DB81;
@@ -374,6 +396,7 @@ div.position-0{
     right: 16px;
     top: 14px;
     float:right;
+    margin-right:0;
 }
 .section-front-page #facebook{
     margin-top:3px;
@@ -443,6 +466,9 @@ div.position-0{
     width:392px;
     height:80px;
 }
+.section-front-page #container{
+    background:none;
+}
 .section-front-page #s{
     background:url("img/s.png");
     float:left;
@@ -489,6 +515,13 @@ div.position-0{
 }
 #topheader a{
     color:#8EB048;
+    border-right:1px solid;
+    padding-right:7px;
+    padding-left:3px;
+}
+#topheader a:last-child{
+    border:none;
+    padding-right:0px;
 }
 #topheader p{
     color: #8EB048;
@@ -605,6 +638,9 @@ ul#nav li:last-child a{
         width:31px;
         float:left;
     }
+    .listing-summary #search-form form span.option{
+        width:40%; 
+    }
     .footer{
         width:85%;   
     }
@@ -616,10 +652,10 @@ ul#nav li:last-child a{
         width: 1040px;
     }
     .span3{
-        width:25%;   
+        width:40%;   
     }
     .twocolumns{
-        width:75%;
+        width:60%;
     }
     .threecolumns{
         width:50%   
