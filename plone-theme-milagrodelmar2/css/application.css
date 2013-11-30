@@ -1,6 +1,9 @@
 a:hover{
     text-decoration:none;  
 }
+#right-column-content p.agent_title{
+    color:#D2DB81;   
+}
 body {
     color:#4C432D;
     background: #40631F url("img/headerbackground.jpg") no-repeat scroll center top;
@@ -18,6 +21,12 @@ body {
 #bottom-content{
     background:url("img/body3.jpg");
     height:28px;
+}
+.collapsible .collapser.collapsed{
+    background:url("img/arrowRight2.png") no-repeat scroll right center;
+}
+.collapsible .collapser.expanded{
+    background:url("img/arrowDown3.png") no-repeat scroll right center;
 }
 #callme{
      background:#1F4015;
@@ -188,6 +197,9 @@ ul.dropdown-menu li{
 .row-fluid{
     display:none;   
 }
+#form{
+    margin:18px 0;   
+}
 .footer {
     float:left;
     text-shadow: none;
@@ -206,9 +218,18 @@ ul.dropdown-menu li{
     text-transform: uppercase;
 }
 .form-rows span.option{
-    width:49%;
+    width:100%;
     float:left;
     clear:none;
+}
+.horizontal{
+    color:#D2DB81;   
+}
+#main .form-row-listing-type .horizontal{
+    display:none;   
+}
+#formfield-form-widgets-location_state{
+    padding-top:13px;   
 }
 #doormat-container h3{
     margin:0;   
@@ -244,6 +265,25 @@ ul.dropdown-menu li{
     height:23px;
     margin-right:4px;
 }
+.listing-summary #search-form .form-rows{
+    padding:0;   
+}
+.listing-summary #search-form .form-row-listing .field{
+    padding:0; 
+    width:100%;
+}
+.listing-summary #search-form .form-rows .field{
+    padding:0;
+    margin:0;
+}
+.listing-summary #search-form .form-row-location .field, 
+.listing-summary #search-form .form-row-price .field, 
+.listing-summary #search-form .form-row-beds-baths .field, 
+.listing-summary #search-form .form-row-sizes .field, 
+.listing-summary #search-form .form-row-other .field{
+    padding:0;
+    margin:0;
+}
 #left-column-content a{
     line-height: 1.1em; 
 }
@@ -259,6 +299,12 @@ ul.dropdown-menu li{
 }
 #listimg{
     height:380px;
+}
+.label, .badge{
+    background:none;   
+    text-shadow:none;
+    font-weight:normal;
+    font-size:13px;
 }
 #main{   
     margin:0;
@@ -281,6 +327,9 @@ ul.dropdown-menu li{
 .nav li{
     display: block;
     padding:18px 0;
+}
+.nav-tabs li{
+    padding:0;   
 }
 .navbar .nav > li > a {
     color:#D2DB81;
@@ -327,6 +376,9 @@ ul.dropdown-menu li{
     right: 16px;
     bottom: 19px;
 }
+.nocolumns #content{
+    padding:0 40px;   
+}
 #preview{    
     margin-left: 10px;
     background:url("img/preview2.png");
@@ -356,6 +408,18 @@ ul.dropdown-menu li{
 #portal-personaltools dd{
     background:#143508;   
 }
+.portletAgentInformation .portletItem .contact_details dd{
+    float:none;
+    width:100%;
+}
+.portletQuickSearch{
+    color:#ffffff;   
+}
+.portletAgentInformation .portletItem .contact_details{
+    margin-top:0;
+    color:#ffffff;
+    padding: 0 22px;
+}
 div.position-0{
     margin-left:-100%
 }
@@ -365,6 +429,8 @@ div.position-0{
 }
 #right-column-content .portlet h4{
     line-height:57px;   
+    padding-left:20px;
+    color:#F7F5E9;
 }
 .section-front-page #topheader{
     background:none;   
@@ -476,8 +542,23 @@ div.position-0{
     width:4px;
     height:38px;
 }
+.section-search-properties .label, .badge{
+    color:#4C432D;   
+}
+.section-search-properties .horizontal{
+    color:#8EB048;
+}
+.section-search-properties .portletQuickSearch .label, .badge{
+    color:#ffffff;   
+}
+.section-search-properties .portletQuickSearch .horizontal{
+    color:#D2DB81;   
+}
 .search-query {
     display:none;
+}
+.separator{
+    display:none;   
 }
 #social{  
     position: relative;
@@ -510,7 +591,7 @@ div.position-0{
     background:url("img/t2.png");
     height:31px;
 }
-.twocolumns article{
+.twocolumns #content{
     padding-left:40px;
 }
 #topheader a{
@@ -558,9 +639,8 @@ ul#nav li:last-child a{
     margin:0;   
 }
 #right-column-content{
-    padding-left:30px;
-    padding-right:31px;
     border:0;
+    padding:0 25px;
 }
 #right-column-content .portlet-static-book-a-vacation h4{
     background:url("img/spot1new.jpg");
@@ -594,10 +674,9 @@ ul#nav li:last-child a{
     font-weight:normal;
 }
 #right-column-content h3{
-    text-transform:uppercase;
     padding:0 22px;
     padding-top:6px;
-    color:#254A14;
+    color:#F7F5E9;
     font-size:15px;
     font-weight:bold;
     line-height:1em;
@@ -607,6 +686,7 @@ ul#nav li:last-child a{
     margin:25px 0;
     border-radius:8px;
     background:url("img/spotlight.gif") repeat-x scroll left 57px #456E20;
+    padding-bottom:1px;
 }
 #right-column-content p{
     padding:4px 22px;
@@ -615,10 +695,9 @@ ul#nav li:last-child a{
     font-size:13px;
     line-height:1.3em;        
 }
-#right-column-content a{
-    text-transform:uppercase;  
+#right-column-content a{  
     color:#D2DB81;
-    font-size:15px;
+    font-size:13px;
     line-height:1.3em;
 }
 #left-column-content{
@@ -639,7 +718,7 @@ ul#nav li:last-child a{
         float:left;
     }
     .listing-summary #search-form form span.option{
-        width:40%; 
+        width:49%; 
     }
     .footer{
         width:85%;   
@@ -651,14 +730,27 @@ ul#nav li:last-child a{
     .span12 {
         width: 1040px;
     }
-    .span3{
-        width:40%;   
+    #right-column{
+        width:35%;   
     }
     .twocolumns{
-        width:60%;
+        width:65%;
     }
     .threecolumns{
         width:50%   
+    }
+    .listing-summary #search-form .form-row-location .field,
+    .listing-summary #search-form .form-row-price .field,
+    .listing-summary #search-form .form-row-beds-baths .field,
+    .listing-summary #search-form .form-row-sizes .field,
+    .listing-summary #search-form .form-row-other .field{
+        width:49%;
+    }
+    .listing-summary #search-form .form-row-price #formfield-form-widgets-location_city{
+    width:100%;   
+    }
+    .listing-summary #search-form .form-row-price #formfield-form-widgets-location_city #form-widgets-location_city{
+    width:44%;   
     }
 }
 @media (min-width: 980px) and (max-width: 1199px){ 
@@ -690,6 +782,9 @@ ul#nav li:last-child a{
     }
     #center-column{
         width:100%;
+    }
+    .twocolumns #content{
+    padding:0 40px;
     }
 }
 @media (min-width: 768px) and (max-width: 979px) {
@@ -747,6 +842,9 @@ ul#nav li:last-child a{
     #center-column{
         width:100%;
     }
+    .twocolumns #content{
+    padding:0 40px;
+    }
 }
 @media (max-width: 767px){
     .collapse.in{
@@ -802,5 +900,8 @@ ul#nav li:last-child a{
     }
     #content-columns{
         width:100%;   
+    }
+    .twocolumns #content{
+    padding:0 40px;
     }
 }
