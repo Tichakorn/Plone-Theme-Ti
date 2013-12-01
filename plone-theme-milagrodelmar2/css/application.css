@@ -142,6 +142,9 @@ body {
 .collapse{
     height:auto;   
 }
+#content .listing-summary #search-form dd{
+    padding:0;   
+}
 .dropdown-menu{
     border:none;   
     background-color:#40631F;
@@ -264,6 +267,15 @@ ul.dropdown-menu li{
 .image-inline{
     height:23px;
     margin-right:4px;
+}
+#listing-info{
+    float:right;   
+}
+.listing #listing-images{
+    float:none; 
+}
+.listing #listing-images .galleria-container{
+    border:none;
 }
 .listing-summary #search-form .form-rows{
     padding:0;   
@@ -418,7 +430,6 @@ ul.dropdown-menu li{
 .portletAgentInformation .portletItem .contact_details{
     margin-top:0;
     color:#ffffff;
-    padding: 0 22px;
 }
 div.position-0{
     margin-left:-100%
@@ -642,6 +653,9 @@ ul#nav li:last-child a{
     border:0;
     padding:0 25px;
 }
+#right-column-content .portletAgentInformation .portletItem{
+    padding:0 22px; 
+}
 #right-column-content .portlet-static-book-a-vacation h4{
     background:url("img/spot1new.jpg");
     line-height:57px;
@@ -674,8 +688,7 @@ ul#nav li:last-child a{
     font-weight:normal;
 }
 #right-column-content h3{
-    padding:0 22px;
-    padding-top:6px;
+    padding-top:8px;
     color:#F7F5E9;
     font-size:15px;
     font-weight:bold;
@@ -689,7 +702,7 @@ ul#nav li:last-child a{
     padding-bottom:1px;
 }
 #right-column-content p{
-    padding:4px 22px;
+    padding-top:4px;
     color:#F7F5E9;
     margin:0;
     font-size:13px;
@@ -747,10 +760,33 @@ ul#nav li:last-child a{
         width:49%;
     }
     .listing-summary #search-form .form-row-price #formfield-form-widgets-location_city{
-    width:100%;   
+        width:100%;   
     }
     .listing-summary #search-form .form-row-price #formfield-form-widgets-location_city #form-widgets-location_city{
-    width:44%;   
+        width:44%;   
+    }
+    .listing #listing-images{
+        width:55%;
+    }
+    .listing #listing-images img{
+        width:100%;
+    }
+    #right-column-content figure img{
+        width: 100%;   
+    }
+    .galleria-stage{
+        width:80%;   
+        left:-20px;
+    }
+    .section-latest-listings .galleria-stage{
+        left:5px;
+        width:100%;
+    }
+    .field input[type="text"]{
+        width:85%;   
+    }
+    .section-latest-listings #listing-info{
+        width:54%;
     }
 }
 @media (min-width: 980px) and (max-width: 1199px){ 
@@ -784,7 +820,22 @@ ul#nav li:last-child a{
         width:100%;
     }
     .twocolumns #content{
-    padding:0 40px;
+        padding:0 40px;
+    }
+    .section-latest-listings .listing #listing-info{
+        width:50%;   
+    }
+    .listing #listing-info{
+        width:50%;
+    }
+    .listing #listing-images img{
+        width:100%;
+    }
+    #right-column-content figure img{
+        width: 100%;   
+    }
+    .field input[type="text"]{
+        width:85%;   
     }
 }
 @media (min-width: 768px) and (max-width: 979px) {
@@ -845,6 +896,25 @@ ul#nav li:last-child a{
     .twocolumns #content{
     padding:0 40px;
     }
+    .section-latest-listings .listing #listing-info{
+        width:100%;
+        margin-top:420px;
+    }
+    .listing #listing-images{
+        width:49%;   
+    }
+    .listing #listing-info{
+        width:50%;
+    }
+    .listing #listing-images img{
+        width:100%;
+    }
+    #right-column-content figure img{
+        width: 100%;   
+    }
+    .field input[type="text"]{
+        width:85%;   
+    }
 }
 @media (max-width: 767px){
     .collapse.in{
@@ -903,5 +973,24 @@ ul#nav li:last-child a{
     }
     .twocolumns #content{
     padding:0 40px;
+    }
+    .section-latest-listings .listing #listing-info{
+        width:100%;
+        margin-top:420px;   
+    }
+    .listing #listing-images{
+        width:49%;   
+    }
+    .listing #listing-info{
+        width:50%;
+    }
+    .listing #listing-images img{
+        width:100%;
+    }
+    #right-column-content figure img{
+        width: 100%;   
+    }
+    .field input[type="text"]{
+        width:85%;   
     }
 }
