@@ -6,10 +6,46 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"
     >
 
+    <drop
+        css:content="div#portal-colophon"
+        />
+
+    <drop
+        css:content="ul#portal-siteactions"
+        />
 
     <replace
-        css:theme="div.footer"
-        css:content="div#doormat-container"
+        css:content="ul#portal-siteactions"
+        css:theme="div#topheader"
+        method="raw"
+        />
+
+    <replace
+        css:content="div.colophonWrapper"
+        css:theme="div#callme div.container div#colo"
+        method="raw"
+        />
+
+    <copy
+        attributes="class"
+        css:content="body"
+        css:theme="div#global-wrapper"
+    />
+
+    <drop
+        css:content=".lastCarousel"
+        />
+
+    <replace
+        css:content=".lastCarousel"
+        css:theme="#topslider"
+        method="raw"
+        />
+
+    <replace
+        css:theme="div#test2"
+        css:content="a#portal-logo img"
+        method="raw"
         />
 
     <replace
@@ -49,6 +85,8 @@
     <notheme css:if-content="#content.dialog-wrapper"/>
     <notheme css:if-content="body.popup"/>
     -->
+    <notheme css:if-content="html.flexbox"/>
+    
     <rules css:if-content="#visual-portal-wrapper">
    
    
@@ -106,6 +144,7 @@
                     </xsl:for-each>
                 </div>
             </xsl:if>
+            <!--
             <div id="#viewlet-above-content">
                 <xsl:for-each css:select="#viewlet-above-content > *">
                     <xsl:if test="@id">
@@ -118,7 +157,7 @@
                         <xsl:copy-of select="current()"/>
                     </xsl:if>
                 </xsl:for-each>
-            </div>
+            </div>-->
             <article>
                 <xsl:copy-of css:select="#kssPortalMessage"/>
                 <xsl:copy-of css:select=".portalMessage"/>
