@@ -9,16 +9,10 @@
     <!--<drop
         css:theme="ul#secondary-nav"
         />-->
-        
-    <replace
-        css:content="ul#portal-personaltools"
-        css:theme="div#movelogin2"
-        method="raw"
-        />
 
     <replace
-        css:content="dl#portal-personaltools"
-        css:theme="div#movelogin"
+        css:content="div#colophonWrapper"
+        css:theme="div#callme"
         method="raw"
         />
 

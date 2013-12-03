@@ -11,6 +11,12 @@ body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     line-height:20px;
 }
+h1, h2{
+    letter-spacing:0;  
+}
+#content .documentDescription, #content #description{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
 .border a{
     border-left:1px solid #D2DB81;
     padding:0 15px;
@@ -48,6 +54,9 @@ body {
 .carousel .active, .carousel .next, .carousel .prev{
     display:none;
 }
+#content .listing-summary section{
+    font-size:13px;   
+}
 .caret{
     display:none;
 }
@@ -66,6 +75,10 @@ body {
 }
 .container a{
     color:#8EB048;
+}
+#content a:link, dl.portlet a:link{
+    color:#8EB048;
+    border:none;
 }
 #content .pullquote {
     color:#ffffff;   
@@ -190,18 +203,33 @@ ul.dropdown-menu li{
 .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover{
     background:none;   
 }
-
+div.formControls{
+    margin-left:20px;  
+}
+.listing-summary #search-form form .form-row-other .field span.option{   
+    margin: 5px 6px 5px 0;
+}
+.listing-summary #search-form form .form-row-other .field span.option:first-of-type{
+    margin-left:20px;   
+}
 #facebook{    
     margin-top:4px;
     margin-left: 9px;
     background:url("img/f2.png");
     height:31px;
 }
+.field input[type="text"]{
+        padding-left:0; 
+        padding-right:0;
+    }
 .row-fluid{
     display:none;   
 }
+.field{
+    margin-bottom:0;   
+}
 #form{
-    margin:18px 0;   
+    margin:10px 0;   
 }
 .footer {
     float:left;
@@ -231,9 +259,6 @@ ul.dropdown-menu li{
 #main .form-row-listing-type .horizontal{
     display:none;   
 }
-#formfield-form-widgets-location_state{
-    padding-top:13px;   
-}
 #doormat-container h3{
     margin:0;   
 }
@@ -243,17 +268,28 @@ ul.dropdown-menu li{
 #portal-footer{
     display:none;   
 }
-#portal-colophon{
-    display:none;   
-}
-#portal-siteactions{
-    display:none;
-}
 #portletFooterManager{
     display:none;
 }
 #portletBelowContentManager{
     display:none;   
+}
+#portal-colophon{
+    margin:0;
+    text-align:left;
+    font-size:100%;
+    background: none repeat scroll 0 0 #1F4015;
+    height: 39px;
+}
+.colophonWrapper{
+    color: #D2DB81;
+    height: 13px;
+    line-height: 13px;
+    margin: 0;
+    padding: 13px 0 13px 40px;
+}
+.footer .row{
+    margin-bottom:20px;   
 }
 #firstlist a{
     border-left-width:0;
@@ -268,6 +304,11 @@ ul.dropdown-menu li{
     height:23px;
     margin-right:4px;
 }
+img.image-left{
+    float:none;
+    margin-top:0;
+    margin-bottom:0;
+}   
 #listing-info{
     float:right;   
 }
@@ -288,11 +329,17 @@ ul.dropdown-menu li{
     padding:0;
     margin:0;
 }
+.listing-summary #search-form .form-row-other .field{
+    padding-left: 47px;
+}
+.listing-summary #search-form .form-row-other .field:first-of-type{
+    padding-left: 0;
+}
 .listing-summary #search-form .form-row-location .field, 
 .listing-summary #search-form .form-row-price .field, 
 .listing-summary #search-form .form-row-beds-baths .field, 
-.listing-summary #search-form .form-row-sizes .field, 
-.listing-summary #search-form .form-row-other .field{
+.listing-summary #search-form .form-row-sizes .field
+{
     padding:0;
     margin:0;
 }
@@ -334,7 +381,7 @@ ul.dropdown-menu li{
     border:0;   
 }
 .navbar .dropdown-menu:after{
-    border:0;   
+    border:none;   
 }
 .nav li{
     display: block;
@@ -352,6 +399,9 @@ ul.dropdown-menu li{
 .navbar .nav > li > a:hover {
     color:#ffffff;  
     padding:0 15px;
+}
+.nav-tabs{
+    border:0;   
 }
 .navbar .nav .active > a, .navbar .nav .active > a:hover{
     background-color:#143508;   
@@ -512,6 +562,9 @@ div.position-0{
 .section-front-page #center-column h3{
     color:#F7F5E9;   
 }
+.section-front-page .breadcrumb{
+    display:none;   
+}
 .section-front-page h4{
     color:#F7F5E9;
 }
@@ -651,7 +704,7 @@ ul#nav li:last-child a{
 }
 #right-column-content{
     border:0;
-    padding:0 25px;
+    padding:0 3%;
 }
 #right-column-content .portletAgentInformation .portletItem{
     padding:0 22px; 
@@ -680,12 +733,36 @@ ul#nav li:last-child a{
     border-top-left-radius:8px;
     border-top-right-radius:8px;
 }
-#right-column-content h2{
-    padding:0 22px 10px;
+.portletNews .portletItem{
+    padding:0 22px; 
+}
+.portletNews .portlet-footer{
+    margin-top:20px;   
+}
+.portletNews small{
+    color:#D2DB81;
+}
+#right-column-content .portletNews .portletItem a{
+    color:#ffffff;
+}
+#right-column-content .portletNews p{
+    padding:0;  
+    border-bottom:1px dotted #ffffff;
+}
+li{
+    font-size:13px;   
+}
+.portletNews h2{
+    clear: both;
     color:#D2DB81;
     font-size:15px;
-    line-height:1.3em;
     font-weight:normal;
+}
+#right-column-content .portletNews h2 a{
+    line-height:36px;
+}
+#right-column-content .portletNews p a{
+    line-height:36px;
 }
 #right-column-content h3{
     padding-top:8px;
@@ -713,12 +790,22 @@ ul#nav li:last-child a{
     font-size:13px;
     line-height:1.3em;
 }
+#right-column-content .portletNews h4 a{
+    line-height:57px;  
+    color:#ffffff;
+}
+#right-column-content .portletNews .odd{
+    padding-left:20px;   
+}
 #left-column-content{
     border:0;
-    padding:20px 35px 20px 40px;
+    padding-left:40px;
 }
 .portlet-footer{
     border:0;   
+}
+.row .field{
+    margin-right:20px;   
 }
 @media (min-width: 1200px) {    
     .container,
@@ -733,8 +820,11 @@ ul#nav li:last-child a{
     .listing-summary #search-form form span.option{
         width:49%; 
     }
+    .listing-summary #search-form form .form-row-other .field span.option{
+        width:25%;   
+    }
     .footer{
-        width:85%;   
+        width:100%;   
     }
     #preview{
         width:93px;
@@ -746,6 +836,9 @@ ul#nav li:last-child a{
     #right-column{
         width:35%;   
     }
+    #left-column{
+        width:15%;   
+    }
     .twocolumns{
         width:65%;
     }
@@ -755,9 +848,12 @@ ul#nav li:last-child a{
     .listing-summary #search-form .form-row-location .field,
     .listing-summary #search-form .form-row-price .field,
     .listing-summary #search-form .form-row-beds-baths .field,
-    .listing-summary #search-form .form-row-sizes .field,
-    .listing-summary #search-form .form-row-other .field{
+    .listing-summary #search-form .form-row-sizes .field
+    {
         width:49%;
+    }
+    .listing-summary #search-form .form-row-other .field{
+        width:30%;
     }
     .listing-summary #search-form .form-row-price #formfield-form-widgets-location_city{
         width:100%;   
@@ -783,10 +879,16 @@ ul#nav li:last-child a{
         width:100%;
     }
     .field input[type="text"]{
-        width:85%;   
+        width:100%;   
     }
     .section-latest-listings #listing-info{
         width:54%;
+    }
+    select{
+        width:49%;   
+    }
+    select.choice-field{
+        width:100%;   
     }
 }
 @media (min-width: 980px) and (max-width: 1199px){ 
@@ -801,7 +903,7 @@ ul#nav li:last-child a{
         float:left;
     }
     .footer{
-        width:50%;   
+        width:100%;   
     }
     #preview{
         width:93px;
@@ -835,7 +937,24 @@ ul#nav li:last-child a{
         width: 100%;   
     }
     .field input[type="text"]{
-        width:85%;   
+        width:100%;   
+    }
+    #right-column-content section{
+        float: left;
+        margin-left: 3%;
+        width: 47%;
+    }
+    div.managePortletsLink, a.managePortletsFallback{
+        background:none;
+    }
+    #right-column-content{
+        padding-left:0;
+    }
+    select {
+        width: 49%;
+    }
+    select.choice-field{
+        width:100%;   
     }
 }
 @media (min-width: 768px) and (max-width: 979px) {
@@ -850,7 +969,7 @@ ul#nav li:last-child a{
         float:left;
     }
     .footer{
-        width:50%;   
+        width:100%;   
     }
     #preview{
         width:93px;
@@ -913,7 +1032,24 @@ ul#nav li:last-child a{
         width: 100%;   
     }
     .field input[type="text"]{
-        width:85%;   
+        width:100%;   
+    }
+    #right-column-content section{
+        float: left;
+        margin-left: 3%;
+        width: 47%;
+    }
+    div.managePortletsLink, a.managePortletsFallback{
+        background:none;
+    }
+    #right-column-content{
+        padding-left:0;
+    }
+    select {
+        width: 49%;
+    }
+    select.choice-field{
+        width:100%;   
     }
 }
 @media (max-width: 767px){
@@ -932,7 +1068,7 @@ ul#nav li:last-child a{
         float:left;
     }
     .footer{
-        width:50%;   
+        width:100%;   
     }
     #preview{
         width:93px;
@@ -991,6 +1127,23 @@ ul#nav li:last-child a{
         width: 100%;   
     }
     .field input[type="text"]{
-        width:85%;   
+        width:100%;   
+    }
+    #right-column-content section{
+        float: left;
+        margin-left: 3%;
+        width: 47%;
+    }
+    div.managePortletsLink, a.managePortletsFallback{
+        background:none;
+    }
+    #right-column-content{
+        padding-left:0;
+    }
+    select {
+        width: 49%;
+    }
+    select.choice-field{
+        width:100%;   
     }
 }
