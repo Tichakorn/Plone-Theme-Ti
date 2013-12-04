@@ -14,13 +14,14 @@ body {
 h1, h2{
     letter-spacing:0;  
 }
-h1{
+.section-latest-listings h1, .section-search-properties h1, .section-listing-collection h1{
     font-size:16px;  
     font-weight: normal;
 }
-h2{
+.section-latest-listings h2, .section-search-properties h2, .section-listing-collection h2{
     font-size:14px;
     font-weight:normal;
+    font-style:italic
 }
 #content .documentDescription, #content #description{
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -249,6 +250,19 @@ ul.dropdown-menu li{
 div.formControls{
     margin-left:20px;  
 }
+#right-column .form-row-price .field{
+    float:left;
+    width:43%;
+    clear:none;
+    margin:0;
+}
+#right-column .form-row-price .field:first-of-type{
+    margin-right: 6px;
+    padding-left: 20px;
+}
+#right-column .form-row-price .field input.text-widget{
+    width:100%;
+}
 .section-search-properties div.formControls{
     margin-left:0;  
 }
@@ -300,15 +314,34 @@ div.listingBar{
     line-height: 16.9px;
     text-transform: uppercase;
 }
+.form-row-listing-type .field span.option{
+    width:49%;
+    float:left;
+    clear:none;
+}
 .form-rows span.option{
     width:100%;
     float:left;
     clear:none;
 }
-.galleria-thumbnails-container{
+.form-rows #formfield-form-widgets-air_condition span.option,
+.form-rows #formfield-form-widgets-pool span.option,
+.form-rows #formfield-form-widgets-jacuzzi  span.option{
+    width:30%;
+}
+.form-rows #formfield-form-widgets-air_condition span.option:first-of-type,
+.form-rows #formfield-form-widgets-pool span.option:first-of-type,
+.form-rows #formfield-form-widgets-jacuzzi  span.option:first-of-type{
+    margin-left:15px;
+}
+.form-rows #formfield-form-widgets-location_type span.option,
+.form-rows #formfield-form-widgets-geographic_type span.option,
+.form-row-filter-other span.option{
+    width:49%   
+}
+.section-search-properties .galleria-thumbnails-container,.section-listing-collection .galleria-thumbnails-container{
     left: 0;
     right: 75px;
-    top: 310px;
 }
 .horizontal{
     color:#D2DB81;   
@@ -362,9 +395,10 @@ div.listingBar{
     margin-right:4px;
 }
 img.image-left{
-    float:none;
+    float:left;
     margin-top:0;
     margin-bottom:0;
+    vertical-align: baseline;
 }   
 #listing-info{
     float:right;   
@@ -376,11 +410,23 @@ img.image-left{
 .listing #listing-images .galleria-container{
     border:none;
 }
+.listing-summary dt{
+    background: url("img/content2.jpg") repeat-y;   
+}
 .listing-summary #search-form .form-rows{
     padding:0; 
     margin-bottom:1%;
     margin-top:1%;
     border-top:1px solid #D1D1D1;
+}
+.listing-summary #search-form .form-row-beds-baths{
+    margin-bottom:0;   
+}
+.listing-summary #search-form .form-row-sizes,
+.listing-summary #search-form .form-row-other
+{
+    border:0;
+    margin:0;
 }
 .listing-summary #search-form .form-rows:first-of-type{
     border:none;
@@ -394,7 +440,7 @@ img.image-left{
     margin:0;
 }
 .listing-summary #search-form .form-row-other .field{
-    padding-left: 47px;
+    padding-left: 5%;
 }
 .listing-summary #search-form .form-row-other .field:first-of-type{
     padding-left: 0;
@@ -534,10 +580,16 @@ img.image-left{
 }
 .portletAgentInformation .portletItem .contact_details dd{
     float:none;
-    width:100%;
+    width:110%;
 }
 .portletQuickSearch{
     color:#ffffff;   
+} 
+#right-column-content .portletQuickSearch .portletItem{
+    padding:0;   
+}
+#right-column-content .portletNews .portletItem{
+    padding:0 22px;   
 }
 .portletAgentInformation .portletItem .contact_details{
     margin-top:0;
@@ -794,9 +846,6 @@ ul#portal-siteactions a:hover{
 .section-front-page ul#portal-siteactions a:hover{
     color:#D2DB81;
 }
-.section-front-page ul#portal-siteactions li:first-of-type{
-    display: none;   
-}
 ul#portal-siteactions li:last-of-type a{
     border:none;
 }
@@ -820,7 +869,7 @@ ul#portal-siteactions li:last-of-type a{
     padding:0 3%;
 }
 #right-column-content .portletAgentInformation .portletItem{
-    padding:0 22px; 
+    padding: 22px 22px 0;
 }
 #right-column-content .portlet-static-book-a-vacation h4{
     background:url("img/spot1new.jpg");
@@ -853,13 +902,18 @@ ul#portal-siteactions li:last-of-type a{
     margin-top:20px;   
 }
 .portletNews small{
-    color:#D2DB81;
+    color:#FFFFFF;
+    line-height: 10px;
 }
 #right-column-content .portletNews .portletItem a{
     color:#ffffff;
 }
+#right-column-content .portletNews .portletItem h2 a{
+    font-size: 17px;
+    color:#D2DB81
+}
 #right-column-content .portletNews p{
-    padding:0;  
+    padding: 0 0 15px;  
     border-bottom:1px dotted #ffffff;
 }
 li{
@@ -875,14 +929,14 @@ li{
     line-height:36px;
 }
 #right-column-content .portletNews p a{
-    line-height:36px;
+    line-height:17px;
 }
 #right-column-content h3{
-    padding-top:8px;
     color:#F7F5E9;
     font-size:15px;
     font-weight:bold;
     line-height:1em;
+    margin-top: 22px;
 }
 #right-column-content section{
     box-shadow:0 0 13px -1px #000000;
@@ -890,6 +944,9 @@ li{
     border-radius:8px;
     background:url("img/spotlight.gif") repeat-x scroll left 57px #456E20;
     padding-bottom:1px;
+}
+#right-column-content .portletItem{
+    padding:0 20px;   
 }
 #right-column-content p{
     padding-top:4px;
@@ -934,7 +991,7 @@ li{
         width:32%; 
     }
     #form .form-row-tabbed .enableFormTabbing span.option{
-        width:24%;   
+        width:32%;   
     }
     .listing-summary #search-form form .form-row-other .field span.option{
         width:25%;   
@@ -980,9 +1037,13 @@ li{
     .listing #listing-images{
         width:55%;
     }
+    .galleria-thumbnails .galleria-image{
+        width:60px !important;
+        height:40px  !important;
+    }
     .galleria-thumbnails .galleria-image img{
-        width:60px;
-        height:40px;
+        width:60px !important;
+        height:40px  !important;
     }
     #right-column-content figure img{
         width: 100%;   
@@ -998,7 +1059,7 @@ li{
         width:100%;   
     }
     .section-latest-listings #listing-info{
-        width:54%;
+        width:45%;
     }
     select{
         width:49%;   
@@ -1136,7 +1197,6 @@ li{
     }
     .section-latest-listings .listing #listing-info{
         width:100%;
-        margin-top:420px;
     }
     .listing #listing-images{
         width:49%;   
@@ -1230,8 +1290,7 @@ li{
     padding:0 40px;
     }
     .section-latest-listings .listing #listing-info{
-        width:100%;
-        margin-top:420px;   
+        width:100%;   
     }
     .listing #listing-images{
         width:49%;   
