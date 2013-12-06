@@ -1,10 +1,16 @@
 a:hover{
     text-decoration:none;  
 }
+.agency-logo-wrapper{
+    padding:0 15%;   
+}
+.agency-logo-wrapper figcaption{
+    display:none;   
+}
 #right-column-content p.agent_title{
     color:#D2DB81;   
 }
-body {
+body{
     color:#4C432D;
     background: #40631F url("img/headerbackground.jpg") no-repeat scroll center top;
     margin: 0 auto; 
@@ -60,8 +66,11 @@ h1, h2{
     margin:0;
     height:379px;
 }
-.carousel .active, .carousel .next, .carousel .prev{
-    display:none;
+.carousel .next{
+    left:55%
+}
+.carousel .prev{
+    left:-55%
 }
 #content .listing-summary section{
     font-size:13px;   
@@ -249,6 +258,10 @@ ul.dropdown-menu li{
 }
 div.formControls{
     margin-left:20px;  
+    margin-bottom:0;
+}
+span.formHelp{
+    color:#ffffff;   
 }
 #right-column .form-row-price .field{
     float:left;
@@ -295,7 +308,8 @@ div.listingBar{
     margin-bottom:0;   
 }
 #form{
-    margin:10px 0;   
+    margin-top:10px;   
+    margin-bottom:0px;
 }
 .footer {
     float:left;
@@ -352,7 +366,7 @@ div.listingBar{
 #doormat-container h3{
     margin:0;   
 }
-.scrollable .items .itemPadding{
+div.scrollable div.items div.itemPadding{
     margin:0;   
 }
 #portal-footer{
@@ -406,6 +420,7 @@ img.image-left{
 .listing #listing-images{
     float:left; 
     margin:0;
+    border:1px solid #CCCCCC;
 }
 .listing #listing-images .galleria-container{
     border:none;
@@ -585,10 +600,16 @@ img.image-left{
 .portletQuickSearch{
     color:#ffffff;   
 } 
+.portletItem .agency_logo{
+    display:none;   
+}
 #right-column-content .portletQuickSearch .portletItem{
     padding:0;   
 }
 #right-column-content .portletNews .portletItem{
+    padding:0 22px;   
+}
+#right-column-content .portletNews .portletFooter{
     padding:0 22px;   
 }
 .portletAgentInformation .portletItem .contact_details{
@@ -601,6 +622,9 @@ div.position-0{
 .row{
     background: url("img/content2.jpg") repeat-y;
     margin:0;   
+}
+.rowlike{
+    padding-top:10px;   
 }
 #right-column-content .portlet h4{
     line-height:57px;   
@@ -723,8 +747,11 @@ div.position-0{
 .section-search-properties .label, .badge{
     color:#4C432D;   
 }
+.section-search-properties .portletAgentContact .horizontal{
+    color:#ffffff;   
+}
 .section-search-properties .horizontal{
-    color:#8EB048;
+    color:#40631F;
 }
 .section-search-properties .portletQuickSearch .label, .badge{
     color:#ffffff;   
@@ -830,6 +857,10 @@ ul#portal-siteactions a{
     padding-left:3px;
     padding-right: 7px;
 }
+.galleria-container img{
+    width:100% !important; 
+    left:0 !important;
+}
 .section-front-page ul#portal-siteactions{
     background:none;   
 }
@@ -839,6 +870,9 @@ ul#portal-siteactions a{
     border-right:1px solid;
     padding-left:3px;
     padding-right: 7px;
+}
+.portletAgentInformation{
+    padding-bottom:10%;
 }
 ul#portal-siteactions a:hover{
     color:#254a14;
@@ -866,10 +900,10 @@ ul#portal-siteactions li:last-of-type a{
 }
 #right-column-content{
     border:0;
-    padding:0 3%;
+    padding:0 7%;
 }
 #right-column-content .portletAgentInformation .portletItem{
-    padding: 22px 22px 0;
+    padding: 10% 15% 5%;
 }
 #right-column-content .portlet-static-book-a-vacation h4{
     background:url("img/spot1new.jpg");
@@ -899,7 +933,8 @@ ul#portal-siteactions li:last-of-type a{
     padding:0 22px; 
 }
 .portletNews .portlet-footer{
-    margin-top:20px;   
+    margin-top:20px;  
+    display:none;
 }
 .portletNews small{
     color:#FFFFFF;
@@ -936,14 +971,14 @@ li{
     font-size:15px;
     font-weight:bold;
     line-height:1em;
-    margin-top: 22px;
+    margin-top: 10%;
 }
 #right-column-content section{
     box-shadow:0 0 13px -1px #000000;
     margin:25px 0;
     border-radius:8px;
     background:url("img/spotlight.gif") repeat-x scroll left 57px #456E20;
-    padding-bottom:1px;
+    padding-bottom:20px;
 }
 #right-column-content .portletItem{
     padding:0 20px;   
@@ -954,6 +989,12 @@ li{
     margin:0;
     font-size:13px;
     line-height:1.3em;        
+}
+#right-column-content p.agency_name{
+    margin-bottom:10%;    
+}
+#right-column-content .portletAgentInformation h3{
+    color:#D2DB81;
 }
 #right-column-content a{  
     color:#D2DB81;
@@ -972,16 +1013,39 @@ li{
     padding-left:40px;
 }
 .portlet-footer{
-    border:0;   
+    border:0; 
+    margin-bottom:0;
 }
 .row .field{
     margin-right:20px;   
 }
+.galleria-stage{
+        width:100%;  
+        left:0;
+    }
+.galleria-container{
+        width:100% !important;
+    }
+.galleria-container .galleria-stage .galleria-image{
+        width:100% !important;
+    }
+.galleria-thumbnails .galleria-image{
+        width:60px !important;
+        height:40px  !important;
+    }
+.galleria-thumbnails .galleria-image img{
+        width:60px !important;
+        height:40px  !important;
+    }
 @media (min-width: 1200px) {    
     .container,
     .navbar-fixed-top .container,
     .navbar-fixed-bottom .container {
         width: 1040px;
+    }
+    #main.container,
+    #content-columns.container{
+        width:1038px;   
     }
     #facebook,#twitter{
         width:31px;
@@ -1034,22 +1098,14 @@ li{
     .listing-summary #search-form .form-row-price #formfield-form-widgets-location_city #form-widgets-location_city{
         width:90%;   
     }
+    .section-latest-listings .listing #listing-images{
+        width:45%;
+    }
     .listing #listing-images{
         width:55%;
     }
-    .galleria-thumbnails .galleria-image{
-        width:60px !important;
-        height:40px  !important;
-    }
-    .galleria-thumbnails .galleria-image img{
-        width:60px !important;
-        height:40px  !important;
-    }
     #right-column-content figure img{
         width: 100%;   
-    }
-    .galleria-stage{
-        width:80%;   
     }
     .section-latest-listings .galleria-stage{
         left:5px;
@@ -1059,7 +1115,7 @@ li{
         width:100%;   
     }
     .section-latest-listings #listing-info{
-        width:45%;
+        width:50%;
     }
     select{
         width:49%;   
@@ -1077,6 +1133,10 @@ li{
     .navbar-fixed-bottom .container ,
     #content-columns{
         width: 940px;
+    }
+    #main.container,
+    #content-columns.container{
+        width:938px;   
     }
     #facebook,#twitter{
         width:31px;
@@ -1111,7 +1171,7 @@ li{
         width:50%;
     }
     .listing #listing-images img{
-        width:100%;
+        width:100% !important;
     }
     #right-column-content figure img{
         width: 100%;   
@@ -1143,6 +1203,10 @@ li{
     .navbar-fixed-bottom .container,
     #content-columns{
         width: 724px;
+    }
+    #main.container,
+    #content-columns.container{
+        width: 722px
     }
     #facebook,#twitter{
         width:31px;
@@ -1199,13 +1263,27 @@ li{
         width:100%;
     }
     .listing #listing-images{
-        width:49%;   
+        width:100%;   
+    }
+    .galleria-container{
+        width:100% !important;
+    }
+    .galleria-container .galleria-stage .galleria-image{
+        width:100% !important;
     }
     .listing #listing-info{
-        width:50%;
+        width:100%;
+    }
+    .section-latest-listings .listing #listing-images img{
+        width:100% !important;
+    }
+    .section-listing-collection .listing #listing-images img{
+        width:100% !important;
+        left:0 !important;
     }
     .listing #listing-images img{
-        width:100%;
+        width:100% !important;
+        left:0 !important;
     }
     #right-column-content figure img{
         width: 100%;   
@@ -1232,6 +1310,16 @@ li{
     }
 }
 @media (max-width: 767px){
+    .container,
+    .navbar-fixed-top .container,
+    .navbar-fixed-bottom .container,
+    #content-columns{
+        width: 480px;
+    }
+    #main.container,
+    #content-columns.container{
+        width: 478px
+    }
     .collapse.in{
         width: 200px;   
         background-color:#40631f;
@@ -1271,7 +1359,7 @@ li{
     #topsearchbox{
         display:none;
     }
-    #logomi{
+    #portal-logo{
         display:none;
     }
     .span3{
@@ -1293,10 +1381,16 @@ li{
         width:100%;   
     }
     .listing #listing-images{
-        width:49%;   
+        width:100%;   
+    }
+    .galleria-container{
+        width:100% !important;
+    }
+    .galleria-container .galleria-stage .galleria-image{
+        width:100% !important;
     }
     .listing #listing-info{
-        width:50%;
+        width:100%;
     }
     .listing #listing-images img{
         width:100%;
@@ -1324,4 +1418,37 @@ li{
     select.choice-field{
         width:100%;   
     }
+}
+.ie8 .container{
+    width:1040px;   
+}
+.ie8 #right-column{
+    width:35%;
+}
+.ie8 .label{
+    font-size:10px;
+}
+.ie8 #content .pullquote{
+    color:#ffffff;   
+}
+.ie8 .field input[type="text"]{
+    width:100%;   
+}
+.ie8 .form-row-listing-type .field span.option{
+    width:49%;   
+}
+.ie8 .twocolumns{
+    width:65%;   
+}
+.ie8 select{
+    width:49%;   
+}
+.ie8 select.choice-field{
+    width:100%;   
+}
+.ie8 .form-row-price{
+    margin-left:20px;   
+}
+.ie8 .formfield-form-widgets-price_min{
+    margin-right:6px;   
 }
