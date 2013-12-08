@@ -43,6 +43,9 @@ h1, h2{
     background:url("img/body3.jpg");
     height:28px;
 }
+.carousel .next, .carousel .prev{
+    width:5%;   
+}
 .collapsible .collapser.collapsed{
     background:url("img/arrowRight2.png") no-repeat scroll right center;
 }
@@ -67,10 +70,10 @@ h1, h2{
     height:379px;
 }
 .carousel .next{
-    left:55%
+    left:100%
 }
 .carousel .prev{
-    left:-55%
+    left:-5%
 }
 #content .listing-summary section{
     font-size:13px;   
@@ -114,6 +117,16 @@ h1, h2{
 }
 #content .documentDescription, #content #description {
     color:#4C432D;
+    font-weight:normal;
+    font-size:14px;
+    line-height:19.5px;
+}
+#listing-info dl{
+    font-size:11.7px;
+    line-height:19.5px;
+}
+.portletAgentInformation .portletItem .contact_details dt{
+    width:39%;   
 }
 .container {
     margin: 0 auto;
@@ -265,7 +278,6 @@ span.formHelp{
 }
 #right-column .form-row-price .field{
     float:left;
-    width:43%;
     clear:none;
     margin:0;
 }
@@ -595,11 +607,15 @@ img.image-left{
 }
 .portletAgentInformation .portletItem .contact_details dd{
     float:none;
-    width:110%;
+    width:120%;
 }
 .portletQuickSearch{
     color:#ffffff;   
 } 
+.enableFormTabbing{
+    font-size:13px;
+    line-height:26px;
+}
 .portletItem .agency_logo{
     display:none;   
 }
@@ -1037,11 +1053,17 @@ li{
         width:60px !important;
         height:40px  !important;
     }
+.scrollable .items .tileItem{
+    height: 379px;  
+}
 @media (min-width: 1200px) {    
     .container,
     .navbar-fixed-top .container,
     .navbar-fixed-bottom .container {
         width: 1040px;
+    }
+    .scrollable .items .tileItem{
+        width:1040px !important;    
     }
     #main.container,
     #content-columns.container{
@@ -1112,7 +1134,7 @@ li{
         width:100%;
     }
     .field input[type="text"]{
-        width:100%;   
+        width:99%;   
     }
     .section-latest-listings #listing-info{
         width:50%;
@@ -1125,18 +1147,24 @@ li{
     }
     #listing-info{
         width:40%;   
-}
+    }
+    #right-column .form-row-price .field{
+        width:43%;
+    }
 }
 @media (min-width: 980px) and (max-width: 1199px){ 
     .container,
     .navbar-fixed-top .container,
     .navbar-fixed-bottom .container ,
     #content-columns{
-        width: 940px;
+        width: 870px;
     }
     #main.container,
     #content-columns.container{
-        width:938px;   
+        width:868px;   
+    }
+    .scrollable .items .tileItem{
+        width:870px !important;   
     }
     #facebook,#twitter{
         width:31px;
@@ -1150,7 +1178,7 @@ li{
         float:left;
     }
     .span12 {
-        width: 940px;
+        width:940px;
     }
     .span3{
         width:100%;   
@@ -1177,12 +1205,12 @@ li{
         width: 100%;   
     }
     .field input[type="text"]{
-        width:100%;   
+        width:99%;   
     }
     #right-column-content section{
         float: left;
-        margin-left: 3%;
-        width: 47%;
+        margin-left:4%;
+        width: 100%;
     }
     div.managePortletsLink, a.managePortletsFallback{
         background:none;
@@ -1196,17 +1224,26 @@ li{
     select.choice-field{
         width:100%;   
     }
+    #right-column .form-row-price .field{
+        width:46.5%;
+    }
 }
 @media (min-width: 768px) and (max-width: 979px) {
     .container,
     .navbar-fixed-top .container,
     .navbar-fixed-bottom .container,
     #content-columns{
-        width: 724px;
+        width: 680px;
+    }
+    .scrollable .items .tileItem{
+        width:680px !important;   
     }
     #main.container,
     #content-columns.container{
-        width: 722px
+        width: 678px;
+    }
+    #right-column .form-row-price .field{
+        width:45.5%;
     }
     #facebook,#twitter{
         width:31px;
@@ -1289,12 +1326,12 @@ li{
         width: 100%;   
     }
     .field input[type="text"]{
-        width:100%;   
+        width:99%;   
     }
     #right-column-content section{
         float: left;
         margin-left: 3%;
-        width: 47%;
+        width: 100%;
     }
     div.managePortletsLink, a.managePortletsFallback{
         background:none;
@@ -1316,6 +1353,9 @@ li{
     #content-columns{
         width: 480px;
     }
+    .scrollable .items .tileItem{
+        width:480px !important;   
+    }
     #main.container,
     #content-columns.container{
         width: 478px
@@ -1326,6 +1366,9 @@ li{
         height:auto; 
         top:16px;
         padding:5px;
+    }
+    #right-column .form-row-price .field{
+        width:44.5%;
     }
     .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{
         padding:0;   
@@ -1399,12 +1442,12 @@ li{
         width: 100%;   
     }
     .field input[type="text"]{
-        width:100%;   
+        width:99%;   
     }
     #right-column-content section{
         float: left;
         margin-left: 3%;
-        width: 47%;
+        width: 100%;
     }
     div.managePortletsLink, a.managePortletsFallback{
         background:none;
@@ -1451,4 +1494,52 @@ li{
 }
 .ie8 .formfield-form-widgets-price_min{
     margin-right:6px;   
+}
+.ie8 .column-0 a{
+    color:#D2DB81;
+}
+.ie8 .column-1 a{
+    color:#D2DB81;
+}
+.ie8 .column-2 a{
+    color:#D2DB81;
+}
+.ie8 .colophonWrapper{
+    font-size:13px;   
+}
+.ie8 body{
+    background:#40631F;   
+}
+.ie8 #global-wrapper{
+    background:url("img/headerbackground.jpg") no-repeat center top;  
+}
+.ie8 .navbar-search{
+    display:none;
+}
+.ie8 .navbar{
+    background:#143508;
+}
+.ie8 .navbar-inner{
+    background:#143508;
+}
+.ie8 #navibar{
+    background:#143508;
+}
+.ie8 .footer{
+    background:#40631F;   
+}
+.ie8 .footer .row{
+    background:#40631F;   
+}
+.ie8 .container a{
+    color: #8EB048;  
+}
+.ie8 h4{
+    font-size: 14px;
+}
+.ie8 #right-column .form-row-price .field{
+    width:49%; 
+}
+.ie8 #right-column .form-row-price #formfield-form-widgets-price_max{
+    margin-left:1%;   
 }
