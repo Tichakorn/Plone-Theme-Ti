@@ -1,5 +1,76 @@
+#portal-personaltools ul{
+    margin:0;
+}
 .icons-on{   
     margin:0 auto;
+}
+ul.submenu{
+    margin:0;  
+    width:100%; 
+}
+ul.submenu li a{
+    margin:0;  
+    width:100%;
+}
+.state-private{
+    color: #000000 !important;
+}
+#portal-globalnav ul.submenu li a{
+    padding:0;
+    margin-top:0;
+    border-right:0;
+    width:100%;
+    color: #000000;
+    background:#E3E3E3;
+    height:auto;
+    line-height:39px;
+}
+#portal-globalnav ul.submenu li{
+    border-bottom: 1px solid #C1C1C1;
+    line-height:39px;
+    height: 39px;
+    display: block;
+    width:100%;   
+}
+dl.actionMenu.activated dd{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;   
+}
+#portal-personaltools dd{
+    padding:0;   
+}
+#portal-personaltools dd a{ 
+    margin:0;
+    color:#000000;
+    border-bottom:1px solid #c1c1c1;
+}
+#doormat-container{
+    background:red; 
+    margin:0;
+}
+#doormat-container .doormatColumn{ 
+    padding:1% 0;
+}
+#doormat-container p{
+    color:#ffffff;   
+}
+#doormat-container dl{
+    overflow:auto;   
+}
+.column-0 .doormatSection .doormatSectionBody{
+    float:left;
+    margin-right:5%;
+}
+.column-0 .doormatSection .doormatSectionBody:first-of-type{
+    margin-top: 2%;
+}
+#doormat-container.columns-2 .column-0{
+    background:#ff0000 url("img/leftfooterbackground2.png") no-repeat left;
+}
+.footer{
+    background:#ff0000 url("img/leftfooterbackground2.png") no-repeat left;
+    box-shadow:none;
+    border-top:0;
 }
 #portal-column-two{
     display: inline-block;
@@ -96,30 +167,34 @@ div.width-full{
 #portal-globalnav li.plain a{
     background:#3f3e3d;
     color:#ffffff;
-    padding:0;
+    padding:0 20px;
     text-align:center;
     line-height: 30px;
     margin-top:5px;
     text-decoration:none;
+    min-width: 0;
+    border-top:0;
 }
 #portal-globalnav li.selected a{
     background:#ff0000;
-    padding:0;
+    padding:0 20px;
     text-align:center;
     line-height: 30px;
     margin-top:5px;
     border:0;
     text-decoration:none;
+    min-width: 0;
 }
 #portal-globalnav li.selected a:hover{
     background:#ff0000;
-    padding:0;
+    padding:0 20px;;
     text-align:center;
     line-height: 30px;
     margin-top:5px;
     border:0;
     text-decoration:none;
     color:#ffffff;
+    min-width: 0;
 }
 .row{
     margin:0;   
@@ -129,9 +204,6 @@ div.width-full{
 }
 #doormat-container.columns-2 .column-0,#doormat-container.columns-2 .column-1{
     margin:0;   
-}
-.column-0 .doormatSection .doormatSectionBody{
-    float:left;
 }
 .footer{
     padding:0;   
@@ -152,11 +224,11 @@ div.width-full{
     .container{
         width:100%;   
     }
-    #doormat-container.columns-2 .column-0{
-        width:40%;   
+    .footer #doormat-container .column-0{
+        width:45%;   
     }
-    #doormat-container.columns-2 .column-1{
-        width:60%;   
+    .footer #doormat-container .column-1{
+        width:55%;   
     }
 }
 @media (min-width: 980px) and (max-width: 1199px){ 
