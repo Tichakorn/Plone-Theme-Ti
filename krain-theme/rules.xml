@@ -6,14 +6,10 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"
     >
     
-    <drop
-        css:content="div#portal-colophon"    
-    />
-    
-    <replace
-        css:theme="div#colowrapper"
-        css:content="div#portal-colophon"
-        method="raw"
+    <copy
+        attributes="class"
+        css:content="body"
+        css:theme="div#globalwarpper"
     />
     
     <replace

@@ -1,21 +1,51 @@
+body{
+    padding:0;   
+}
+.portletNews p a{
+    color:#000000;   
+}
+.portletNews h2 a{
+    color:#ff0000;
+    font-size:16px;
+}
 #portal-personaltools ul{
     margin:0;
 }
-.icons-on{   
+#main{
+    margin:0;   
+    background:url("img/krain_background.png");
+    padding:2% 0;
+}
+#content .documentDescription{
+    color:#ff0000;   
+}
+.icons-on .row{   
     margin:0 auto;
+    z-index:2;
+}
+.icons-on .managePortletsLink{
+    margin-bottom:0;   
 }
 ul.submenu{
     margin:0;  
-    width:100%; 
 }
 ul.submenu li a{
     margin:0;  
-    width:100%;
 }
 .state-private{
     color: #000000 !important;
 }
 #portal-globalnav ul.submenu li a{
+    padding:0;
+    margin-top:0;
+    border-right:0;
+    width:100%;
+    color: #000000 !important;
+    background:#E3E3E3;
+    height:auto;
+    line-height:39px;
+}
+#portal-globalnav ul.submenu li a:hover{
     padding:0;
     margin-top:0;
     border-right:0;
@@ -68,49 +98,31 @@ dl.actionMenu.activated dd{
     background:#ff0000 url("img/leftfooterbackground2.png") no-repeat left;
 }
 .footer{
-    background:#ff0000 url("img/leftfooterbackground2.png") no-repeat left;
+    background: linear-gradient(to left, #ff0000 50%, #ffffff 50%);
     box-shadow:none;
     border-top:0;
 }
-#portal-column-two{
-    display: inline-block;
-    position: relative;
-    margin-left: 2%;
+.portletNews .portletHeader{
+    background:none;
 }
-#portal-column-two:before{
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background:#e6decc;
-    opacity: .6;
+#content img.tileImage, #content div.newsImageContainer{
+    float:left;   
+}
+.portletNews .portletHeader a{
+    font-size:24px;  
+}
+div.cell{
+    position:static;   
+    margin:0;
 }
 #header{   
     background:#000000;
     margin:0 auto;
 }
-#portal-column-content{   
-    display: inline-block;
-    position: relative;
-    margin:0;
-}
-#portal-column-content:before{
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background:#e6decc;
-    opacity: .6;
-}
-#portal-columns div.cell{
-    left:0;
+#header .row{
+    z-index:3;   
 }
 div.width-full{
-    width:100%;
     left:0;
     margin:0;
 }
@@ -123,18 +135,10 @@ div.width-full{
 }
 #portal-colophon{
     background:#000000;
-    width:100%;
+    margin-bottom:0;
 }
-.colophonWrapper{
-    color:#ffffff;   
-    margin:0 auto;
-    overflow:auto;
-}
-.colophonWrapper p{
-    margin:0;
-    float:left;
-    width:50%;
-    text-align:right;
+#portal-colophon p{
+    margin-bottom:0;
 }
 .upper{
     text-transform: uppercase;   
@@ -153,7 +157,6 @@ div.width-full{
     height: 39px;
     clear: none;
     float: left;
-    width: 82%;
     margin-top: 71px;
 }
 #portal-globalnav li{
@@ -211,8 +214,15 @@ div.width-full{
 .footer .row{
     margin:0 auto;   
 }
+#portal-column-two{
+    margin-left:2%;
+    background-color:rgba(192,192,192,0.3);
+}
+#portal-column-content{
+    background-color:rgba(192,192,192,0.3);
+}
 @media (min-width: 1200px){
-    .icons-on,#header .row,.container,.footer .row,.colophonWrapper{
+    #portal-columns .row,#header .row,.footer .row,div.row{
         width:1040px;   
     }
     #portal-column-content{
@@ -230,13 +240,152 @@ div.width-full{
     .footer #doormat-container .column-1{
         width:55%;   
     }
+    ul.submenu{  
+    width:100%; 
+    }
+    ul.submenu li a{  
+    width:100%;
+    }
+    div.width-full{
+    width:100%;
+    }
+    #portal-colophon{
+    width:100%;
+    }
+    #portal-globalnav{
+    width: 82%;
+    }
 }
-@media (min-width: 980px) and (max-width: 1199px){ 
-    
+@media (min-width: 980px) and (max-width:1199px){ 
+    #portal-columns.row,#header .row,.footer .row,div.row{
+        width:870px;   
+    }
+    #portal-column-content{
+        width:65%; 
+    }
+    #portal-column-two{
+        width:33%;
+    }
+    .container{
+        width:100%;   
+    }
+    .footer #doormat-container .column-0{
+        width:55%;   
+    }
+    .footer #doormat-container .column-1{
+        width:45%;   
+    }
+    ul.submenu{  
+    width:100%; 
+    }
+    ul.submenu li a{  
+    width:100%;
+    }
+    div.width-full{
+    width:100%;
+    }
+    #portal-colophon{
+    width:100%;
+    }
+    #portal-globalnav{
+    width: 78.6%;
+    }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-    
+    .icons-on .row,#header .row{
+        width:680px;   
+    }
+    .footer .row{
+        width:100%;   
+    }
+    #portal-column-content{
+        width:100%; 
+    }
+    #portal-column-two{
+        width:100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .container{
+        width:100%;   
+    }
+    .footer #doormat-container .column-0{
+        width:100%;  
+        background:#ffffff;
+    }
+    .column-0 .doormatSection .doormatSectionBody{
+        margin-right:0;
+        width:33%;
+    }
+    .column-0 .doormatSection .doormatSectionBody p{
+        text-align:center;
+    }
+    .footer #doormat-container .column-1{
+        width:100%;   
+    }
+    ul.submenu{  
+    width:100%; 
+    }
+    ul.submenu li a{  
+    width:100%;
+    }
+    div.width-full{
+    width:100%;
+    }
+    #portal-colophon{
+    width:100%;
+    }
+    #portal-globalnav{
+    width: 100%;
+    margin-top:0;
+    }
 }
 @media (max-width: 767px){
-    
+    .icons-on .row,#header .row,.footer .row{
+        width:480px;   
+    }
+    .footer .row{
+        width:100%;   
+    }
+    #portal-column-content{
+        width:100%; 
+    }
+    #portal-column-two{
+        width:100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .container{
+        width:100%;   
+    }
+    .footer #doormat-container .column-0{
+        width:100%;  
+        background:#ffffff;
+    }
+    .column-0 .doormatSection .doormatSectionBody{
+        margin-right:0;
+        width:33%;
+    }
+    .column-0 .doormatSection .doormatSectionBody p{
+        text-align:center;
+    }
+    .footer #doormat-container .column-1{
+        width:100%;   
+    }
+    ul.submenu{  
+    width:100%; 
+    }
+    ul.submenu li a{  
+    width:100%;
+    }
+    div.width-full{
+    width:100%;
+    }
+    #portal-colophon{
+    width:100%;
+    }
+    #portal-globalnav{
+    width: 100%;
+    margin-top:0;
+    }
 }
