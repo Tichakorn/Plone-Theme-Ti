@@ -1,6 +1,17 @@
 body{
     padding:0;   
 }
+small{
+    font-family: 'Roboto', sans-serif;
+    font-size:12px;
+}
+#viewlet-above-content-body{
+    display:none;   
+}
+#content .documentFirstHeading{
+    font-family: 'Montaga', serif;
+    font-size:18px;
+}
 #portal-globalnav{
     font-family: 'PT Serif Caption', serif;   
 }
@@ -8,11 +19,15 @@ body{
     display:none;   
 }
 .portletNews p a{
-    color:#000000;   
+    color:#000000;  
+    font-family: 'Roboto', sans-serif;
+    font-size:12px;
 }
 .portletNews h2 a{
     color:#ff0000;
-    font-size:16px;
+    font-size:14px;
+    font-family: 'Montaga', serif;
+    font-style: italic;
 }
 #portal-personaltools ul{
     margin:0;
@@ -23,7 +38,15 @@ body{
     padding:2% 0;
 }
 #content .documentDescription{
-    color:#ff0000;   
+    color:#ff0000;
+    font-family: 'Montaga', serif;
+    font-size:14px;
+    font-style: italic;
+}
+#content-core p{
+    font-family: 'Roboto', sans-serif;
+    font-size:12px;
+    color:#000000;
 }
 .icons-on .row{   
     margin:0 auto;
@@ -49,7 +72,10 @@ ul.submenu li a{
     color: #000000 !important;
     background:#E3E3E3;
     height:auto;
-    line-height:39px;
+    line-height:23px;
+    font-family: 'Montaga', serif;
+    font-size:12px;
+    margin:0;
 }
 #portal-globalnav ul.submenu li a:hover{
     padding:0;
@@ -59,14 +85,15 @@ ul.submenu li a{
     color: #000000;
     background:#E3E3E3;
     height:auto;
-    line-height:39px;
+    line-height:23px;
 }
 #portal-globalnav ul.submenu li{
     border-bottom: 1px solid #C1C1C1;
-    line-height:39px;
-    height: 39px;
+    line-height:22px;
+    height: 23px;
     display: block;
     width:100%;   
+    border-right:0;
 }
 dl.actionMenu.activated dd{
     border-bottom-left-radius: 0;
@@ -88,7 +115,9 @@ dl.actionMenu.activated dd{
     padding:1% 0;
 }
 #doormat-container p{
-    color:#ffffff;   
+    color:#ffffff;  
+    font-size:14px;
+    font-family: 'Roboto', sans-serif;
 }
 #doormat-container dl{
     overflow:auto;   
@@ -115,11 +144,15 @@ dl.actionMenu.activated dd{
     float:left;   
 }
 .portletNews .portletHeader a{
-    font-size:24px;  
+    font-size:19px;  
+    font-family: 'Montaga', serif;
 }
 div.cell{
     position:static;   
     margin:0;
+}
+#box{
+    position:relative;   
 }
 #header{   
     background:#000000;
@@ -127,6 +160,13 @@ div.cell{
 }
 #header .row{
     z-index:3;   
+}
+#fullbgnav{
+    height:40px;
+    background:#3F3E3D;
+    position:absolute;
+    width:100%;
+    bottom:13px;
 }
 div.width-full{
     left:0;
@@ -154,67 +194,52 @@ div.width-full{
 }
 #portal-personaltools a{
     color:#ffffff;
+    font-family: 'PT Serif Caption', serif;
+    font-size:16px;
 }
 #portal-logo img{
     margin: 5%;
 }
 #portal-globalnav{
     background:#3f3e3d;
-    height: 39px;
+    height: 40px;
     clear: none;
     float: left;
     margin-top: 71px;
 }
 #portal-globalnav li{
-    border-right:1px solid #ffffff;
     max-width:100px;
-    line-height:39px;
-    height: 39px;
+    height: 40px;
     display: inline-block;
 }
 #portal-globalnav li:last-of-type{
     border-right:0;
 }
-#portal-globalnav .selected{
+#portal-globalnav .selected,#portal-globalnav li.selected a{
     background:#ff0000;
 }
-#portal-globalnav .selected+#portal-globalnav li.plain a{
-    border:0;
-}
-#portal-globalnav li.plain a{
+#portal-globalnav li.plain a,
+#portal-globalnav li.selected a,
+#portal-globalnav li.selected a:hover{
     background:#3f3e3d;
     color:#ffffff;
     padding:0;
     text-align:center;
     line-height: 1em;
-    margin-top:5px;
     text-decoration:none;
     min-width: 0;
     border:0;
     font-size:12px;
+    padding:0 9% 0 10%;
+    border-right:1px solid #ffffff;
+    height:35px;
+    margin:2px 0;
 }
 #portal-globalnav li.selected a{
     background:#ff0000;
-    padding:0;
-    text-align:center;
-    line-height: 1em;
-    margin-top:5px;
-    border:0;
-    text-decoration:none;
-    min-width: 0;
-    font-size:12px;
 }
 #portal-globalnav li.selected a:hover{
     background:#ff0000;
-    padding:0;
-    text-align:center;
-    line-height: 1em;
-    margin-top:5px;
-    border:0;
-    text-decoration:none;
-    color:#ffffff;
-    min-width: 0;
-    font-size:12px;
 }
 .row{
     margin:0;   
@@ -246,24 +271,64 @@ dl.portlet dt, div.portletAssignments div.portletHeader{
 #portal-column-one,#portal-column-two{
     margin-left:2%;       
 }
-#portal-column-two .portletWrapper{
+#content{
+    margin:0;    
+}
+#content .row{
+    margin-top:2%;    
+}
+#content .position-0,
+#content .position-5,
+#content .position-10{
     background-color:rgba(192,192,192,0.3);
 }
-#portal-column-content{
-    background-color:rgba(192,192,192,0.3);
+.content_box{
+    background:linear-gradient(#ffffff, #c1c1c1); 
+    margin:0 10%;
+}
+.content_box:first-of-type{ 
+    margin-top:7%;
+}
+.content_box:last-of-type{ 
+    margin-bottom:7%;
+}
+#content .content_box  p{
+    font-family: 'Roboto', sans-serif;
+    font-size:18px;
+    text-transform: uppercase;
+    color:#000000;
+    text-align:center;
+    overflow:auto;
+    position:relative;
+}
+#content .content_box  p a{
+    color:#000000;
+    position:absolute;
+    left: 32%;
+    right: 0;
+    top: 30%;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff,
+    0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff,
+    -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    3px 5px 3px #000000;
+}
+#content .content_box img{
+    float:left;   
+}
+#content p, #content table, #content dl, dl.portlet p, dl.portlet{
+    margin-bottom:5%;   
+}
+div.position-10 .galleria-container img{
+    height:110px !important;
+    width:170px !important;
+    float:left;
+}
+.width-10 img{
+    float:left;   
 }
 @media (min-width: 1200px){
     #portal-columns .row,#header .row,.footer .row,div.row{
-        width:1040px;   
-    }
-    #portal-column-content{
-        width:65%; 
-    }
-    #portal-column-one{
-        width:33%;
-    }
-    #portal-column-two{
-        width:33%;
+        width:1080px;   
     }
     .container{
         width:100%;   
@@ -275,19 +340,34 @@ dl.portlet dt, div.portletAssignments div.portletHeader{
         width:55%;   
     }
     ul.submenu{  
-    width:100%; 
+        width:100%; 
     }
     ul.submenu li a{  
-    width:100%;
+        width:100%;
     }
     div.width-full{
-    width:100%;
+        width:100%;
     }
     #portal-colophon{
-    width:100%;
+        width:100%;
     }
     #portal-globalnav{
-    width: 82%;
+        width: 82.8%;
+    }
+    #content .width-5{
+        width:32.3%;
+    }
+    #content .position-5 {
+        margin-left:1.5%;
+    }
+    #content .position-10 {
+        margin-left:1.5%;
+    }
+    #content .width-10{
+        width:66.1%;   
+    }
+    #content .width-16{
+        width:100%;   
     }
 }
 @media (min-width: 980px) and (max-width:1199px){ 
