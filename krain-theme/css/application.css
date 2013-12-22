@@ -225,15 +225,15 @@ div.width-full{
     color:#ffffff;
     padding:0;
     text-align:center;
-    line-height: 1em;
     text-decoration:none;
-    min-width: 0;
-    border:0;
+    min-width: 70px;
+    border-top:0;
     font-size:12px;
-    padding:0 9% 0 10%;
+    padding:0 4px;
     border-right:1px solid #ffffff;
-    height:35px;
-    margin:2px 0;
+    height:32px;
+    margin:4px 0;
+    line-height:14px;
 }
 #portal-globalnav li.selected a{
     background:#ff0000;
@@ -271,8 +271,107 @@ dl.portlet dt, div.portletAssignments div.portletHeader{
 #portal-column-one,#portal-column-two{
     margin-left:2%;       
 }
-#content{
-    margin:0;    
+.section-search-properties #content,
+.section-latest-listings #content,
+.section-listing-collection #content{
+    margin:0; 
+    padding: 0 40px;
+}
+.section-search-properties #portal-columns,
+.section-latest-listings #portal-columns,
+.section-listing-collection #portal-columns{
+    background:#ffffff;   
+}
+.listing-summary #search-form form span.option{
+    width:32%;
+}
+.listing-summary #search-form .form-row-location .field,
+.listing-summary #search-form .form-row-price .field,
+.listing-summary #search-form .form-row-beds-baths .field,
+.listing-summary #search-form .form-row-sizes .field{
+    width:32%; 
+    padding:0;
+    margin:1% 0 0 0;
+}
+.listing-summary #search-form .form-rows .field {
+    margin:1% 0 0 0;
+    padding:0;
+}
+.listing-summary #search-form .form-rows #formfield-form-widgets-location_type{ 
+    padding: 8px 10px;
+    border: 1px solid #D1D1D1;
+}
+#content ul.formTabs, #content-core ul.formTabs {
+    background: none;
+    border: medium none;
+    margin-bottom: 0;
+    margin-top: 12px;
+}
+#content-views a, #content li.formTab a, #content-core li.formTab a {
+    background:#D2DB81;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    box-shadow: 0.4em 0.2em 0.7em #CCCCCC;
+    color: #4C432D;
+}
+.listing-summary #search-form .form-rows {
+    border-top: 1px solid #D1D1D1;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+.listing-summary #search-form .form-row-listing-type,
+.listing-summary #search-form .form-row-sizes,
+.listing-summary #search-form .form-row-other{
+    border-top: 0;
+}
+.listing-summary #search-form .form-row-listing-type{
+    margin-bottom:1%;   
+}
+#contentActionMenus{
+    top:0;   
+}
+#contentActionMenus dl{
+    margin-bottom:0;   
+}
+.label, .badge {
+    background: none;
+    font-size: 13px;
+    font-weight: normal;
+    text-shadow: none;
+    color:#000000;
+}
+#content-views li.selected a,
+#content-views li a:hover,
+#content li.formTab a.selected,
+#content li.formTab a:hover,
+#content-core li.formTab a.selected, #content-core li.formTab a:hover{
+    background:#40631F;
+    color: #F7F5E9;  
+}
+.listing-summary #search-form .form-row-price #formfield-form-widgets-location_city #form-widgets-location_city{
+    width:90%;   
+    padding:4px 0;
+}
+.field input[type="text"]{
+    padding:4px 0;   
+}
+.listing-summary #search-form .form-rows #formfield-form-widgets-location_type .horizontal,
+#formfield-form-widgets-listing_type .horizontal{
+    display:none;   
+}
+.listing-summary #search-form form .form-row-other .field span.option{
+    width: 25%;   
+}
+.form-row-tabbed dd.formPanel{
+    margin:0;
+    padding:0;
+}
+#content .form-row-tabbed .enableFormTabbing{
+    margin:0;   
+}
+#content .listing-summary dd{
+    margin:0;   
 }
 #content .row{
     margin-top:2%;    
@@ -318,13 +417,73 @@ dl.portlet dt, div.portletAssignments div.portletHeader{
 #content p, #content table, #content dl, dl.portlet p, dl.portlet{
     margin-bottom:5%;   
 }
-div.position-10 .galleria-container img{
+.width-5 div.position-10 .galleria-container img{
     height:110px !important;
     width:170px !important;
-    float:left;
+    position:static !important; 
 }
-.width-10 img{
+.width-5 .galleria-thumbnails-container{
+    display:none;   
+}
+.width-5 .galleria-stage{
     float:left;   
+    height:110px !important;
+    width:170px !important;
+    position:static !important;
+}
+.width-5 .galleria-container,.width-5 .galleria-inner{
+    height:auto !important;
+}
+.width-5 .galleria-info{
+    position:static;   
+}
+.listing-summary h2{
+    font-size:17px;   
+}
+#content #show-form{
+    margin:0;   
+}
+#content dd{
+    padding:0;   
+    margin:0; 
+}
+table.listing tr.odd th, table.listing tr.even th{
+    background: #40631F;
+    color: #D2DB81;
+    line-height: 26px;
+}
+#portal-column-two{
+    margin:0;   
+}
+#portal-column-two .portletWrapper{
+    padding: 25px 7% 0 7%;   
+}
+#portal-column-two .portletWrapper .portlet{
+    background: #456E20;
+    border-radius: 8px;
+    box-shadow: 0 0 13px -1px #000000;
+    padding-bottom: 20px;
+    color:#ffffff;
+}
+#portal-column-two .portletWrapper .portlet .label{
+    color:#ffffff;
+}
+#portal-column-two .portletAgentInformation .portletItem{
+    padding: 10% 15% 5%;
+}
+.row .field{
+    margin-right: 20px;   
+}
+.field input[type="text"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd{
+    padding:0; 
+    margin:0;
+}
+.formHelp{
+    color: #FFFFFF;
 }
 @media (min-width: 1200px){
     #portal-columns .row,#header .row,.footer .row,div.row{
@@ -348,6 +507,12 @@ div.position-10 .galleria-container img{
     div.width-full{
         width:100%;
     }
+    div.width-3\:4{
+        width:65%;
+    }
+    div.width-1\:4{
+        width:35%;
+    }
     #portal-colophon{
         width:100%;
     }
@@ -368,6 +533,20 @@ div.position-10 .galleria-container img{
     }
     #content .width-16{
         width:100%;   
+    }
+    .form-row-listing-type .field span.option {
+    clear: none;
+    float: left;
+    width: 49%;
+    }
+    select.choice-field {
+    width: 100%;
+    }
+    .field input[type="text"] {
+    width: 99%;
+    }
+    select {
+    width: 47%;
     }
 }
 @media (min-width: 980px) and (max-width:1199px){ 
