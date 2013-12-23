@@ -9,7 +9,7 @@
     <copy
         attributes="class"
         css:content="body"
-        css:theme="div#globalwarpper"
+        css:theme="div#globalwrapper"
     />
     
     <replace
