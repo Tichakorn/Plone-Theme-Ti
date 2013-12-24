@@ -1,12 +1,25 @@
 a{
-    color:#C1FFC1;   
+    color:#ffffff;   
+}
+a:hover{
+    text-decoration:none;   
 }
 body{
+    color:#000000;
     padding:0;   
 }
 small{
     font-family: 'Roboto', sans-serif;
     font-size:12px;
+}
+#content div.documentByLine{
+    color:#000000;   
+}
+#edit-bar{
+    margin-bottom:0;   
+}
+#content .listing p{
+    margin-bottom:0;   
 }
 #viewlet-above-content-body{
     display:none;   
@@ -14,7 +27,6 @@ small{
 #content .documentFirstHeading{
     font-family: 'Montaga', serif;
     font-size:18px;
-    color:#ffffff;
 }
 #portal-globalnav{
     font-family: 'PT Serif Caption', serif;   
@@ -39,6 +51,7 @@ small{
 #main{
     margin:0;   
     background:url("img/krain_background.png");
+    background-attachment:fixed;
     padding:2% 0;
 }
 #content .documentDescription{
@@ -143,6 +156,7 @@ dl.actionMenu.activated dd{
 }
 .portletNews .portletHeader{
     background:none;
+    padding:0;
 }
 #content img.tileImage, #content div.newsImageContainer{
     float:left;   
@@ -263,8 +277,18 @@ div.width-full{
 dl.portlet ul.navTreeLevel0 > .navTreeItem{
     border:0;   
 }
-dl.portlet dt, div.portletAssignments div.portletHeader{
-    background:none;   
+dl.portlet dt.portletHeader{
+    background:#0F456A; 
+    line-height: 36px;
+    font-size: 18px;
+    color:#ffffff;
+    font-family: 'Montaga', serif;
+    padding: 0.42em 1em;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+}
+.section-front-page dl.portlet dt.portletHeader{
+    background:none; 
 }
 #portal-column-one .portletWrapper .portlet .portletItem{
     margin-left:0;   
@@ -279,7 +303,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader{
 .section-latest-listings #content,
 .section-listing-collection #content{
     margin:0; 
-    padding: 0 40px;
+    padding: 1% 4%;
 }
 #portal-column-content{
     background-color: rgba(170, 169, 169, 0.5);   
@@ -289,9 +313,6 @@ dl.portlet dt, div.portletAssignments div.portletHeader{
 }
 .section-test-1 #portal-column-content{
     background: none;   
-}
-.listing-summary #search-form form span.option{
-    width:32%;
 }
 .listing-summary #search-form .form-row-location .field,
 .listing-summary #search-form .form-row-price .field,
@@ -377,9 +398,6 @@ dl.portlet dt, div.portletAssignments div.portletHeader{
 #formfield-form-widgets-listing_type .horizontal{
     display:none;   
 }
-.listing-summary #search-form form .form-row-other .field span.option{
-    width: 25%;   
-}
 .form-row-tabbed dd.formPanel{
     margin:0;
     padding:0;
@@ -396,7 +414,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader{
 #content .position-0,
 #content .position-5,
 #content .position-10{
-    background-color:rgba(192,192,192,0.5);
+    background-color:rgba(170, 169, 169, 0.5);
 }
 .content_box{
     background:linear-gradient(#ffffff, #c1c1c1); 
@@ -470,13 +488,9 @@ table.listing tr.odd th, table.listing tr.even th{
 #portal-column-two{
     margin:0;   
 }
-#portal-column-two .portletWrapper{
-    padding: 25px 7% 0 7%;   
-}
 #portal-column-two .portletWrapper .portlet{
     border-radius: 8px;
     box-shadow: 0 0 13px -1px #000000;
-    padding-bottom: 20px;
     color:#ffffff;
     background-color: rgba(170, 169, 169, 0.5);
 }
@@ -485,22 +499,26 @@ table.listing tr.odd th, table.listing tr.even th{
 }
 #portal-column-two .portletAgentInformation .portletItem{
     padding: 10% 15% 5%;
+    margin-left:0;
+}
+.portletAgentContact dd{
+    padding:5% 5% 5%; 
+    margin-left:0;
 }
 .row .field{
     margin:0 4% 0 4%; 
 
 }
 .portletItem form{
-    padding-top:15px;   
+    padding-top:5%;   
 }
 .field input[type="text"] {
     padding-left: 0;
     padding-right: 0;
 }
 dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd{
-    padding:0; 
-    margin:0;
-    
+    margin:0;  
+    padding: 0 5% 5%;
 }
 .portletAgentInformation .portletItem .contact_details{
     overflow:auto;   
@@ -519,7 +537,6 @@ dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd{
 .form-row-listing-type .field span.option {
     clear: none;
     float: left;
-    width: 49%;
 }
 select.choice-field {
     width: 100%;
@@ -534,9 +551,40 @@ select.choice-field {
     padding:8% 0;  
     background:none; 
 }
+.cover-collection-tile{
+    padding:5%;   
+}
+.cover-collection-tile .tile-header{
+    font-size:20px;
+    font-family: 'Montaga', serif;
+}
+.cover-collection-tile .collection-item p{
+    font-size:12px;
+    font-family: 'Roboto', sans-serif;
+}
+.cover-collection-tile .collection-item h2 a{
+    font-size:14px;
+    font-family: 'Montaga', serif;
+    font-style: italic;
+    color:red;
+}
+.cover-contentbody-tile p{
+    font-size:12px;
+    font-family: 'Roboto', sans-serif;   
+}
+.cover-contentbody-tile img,#content-core img{
+    float:left;   
+}
+.cover-richtext-tile p{
+    font-size:18px;
+    font-family: 'Roboto', sans-serif;
+}
 @media (min-width: 1200px){
     #portal-columns .row,#header .row,.footer .row,div.row{
         width:1080px;   
+    }
+    #portal-column-two .portletWrapper{
+    padding: 0 7%;   
     }
     .container{
         width:100%;   
@@ -620,22 +668,34 @@ select.choice-field {
     select {
         width: 47%;
     }
+    .form-row-listing-type .field span.option {
+        width: 49;
+    }
+    .listing-summary #search-form form span.option{
+        width:32%;
+    }
+    .listing-summary #search-form form .form-row-other .field span.option{
+        width: 28%;   
+    }
 }
 @media (min-width: 980px) and (max-width:1199px){ 
     #portal-columns.row,#header .row,.footer .row,div.row{
         width:870px;   
     }
-    #portal-column-content{
-        width:100%; 
-    }
     #portal-column-one{
         width:33%;
     }
-    #portal-column-two{
-        width:100%;
-    }
     .container{
         width:100%;   
+    }
+    #portal-column-two .portletWrapper{
+    padding: 0 7%;   
+    }
+    div.width-3\:4{
+        width:65%;
+    }
+    div.width-1\:4{
+        width:35%;
     }
     .footer #doormat-container .column-0{
         width:55%;   
@@ -679,10 +739,19 @@ select.choice-field {
         width: 100% !important;
     }
     select {
-        width: 49%;
+        width: 47%;
     }
     .portletAgentInformation .portletItem figure img{
         width:100%;   
+    }
+    .form-row-listing-type .field span.option {
+        width: 100%;
+    }
+    .listing-summary #search-form form span.option{
+        width:30%;
+    }
+    .listing-summary #search-form form .form-row-other .field span.option{
+        width: 28%;   
     }
 }
 @media (min-width: 768px) and (max-width: 979px) {
@@ -761,8 +830,28 @@ select.choice-field {
     select {
         width: 48%;
     }
+    #formfield-form-widgets-object_type .option,
+    #formfield-form-widgets-location_type .option,
+    #formfield-form-widgets-geographic_type .option,
+    #formfield-form-widgets-view_type .option,
+    #formfield-form-widgets-ownership_type .option{
+        width:33%;   
+        float: left;
+    }
+    #formfield-form-widgets-air_condition .option,
+    #formfield-form-widgets-pool .option,
+    #formfield-form-widgets-jacuzzi .option{
+        width:33%;   
+        float:left;
+    }
     .portletAgentInformation .portletItem figure img{
         width:100%;   
+    }
+    .listing-summary #search-form form span.option{
+        width:32%;
+    }
+    .listing-summary #search-form form .form-row-other .field span.option{
+        width: 28%;   
     }
 }
 @media (max-width: 767px){
@@ -798,6 +887,14 @@ select.choice-field {
     }
     .column-0 .doormatSection .doormatSectionBody p{
         text-align:center;
+    }
+    #formfield-form-widgets-object_type .option,
+    #formfield-form-widgets-location_type .option,
+    #formfield-form-widgets-geographic_type .option,
+    #formfield-form-widgets-view_type .option,
+    #formfield-form-widgets-ownership_type .option{
+        width:49%;   
+        float: left;
     }
     .footer #doormat-container .column-1{
         width:100%;   
@@ -843,5 +940,17 @@ select.choice-field {
     }
     .portletAgentInformation .portletItem figure img{
         width:100%;   
+    }
+    #formfield-form-widgets-air_condition .option,
+    #formfield-form-widgets-pool .option,
+    #formfield-form-widgets-jacuzzi .option{
+        width:33%;   
+        float:left;
+    }
+    .listing-summary #search-form form span.option{
+        width:48%;
+    }
+    .listing-summary #search-form form .form-row-other .field span.option{
+        width: 40%;   
     }
 }
