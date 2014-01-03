@@ -2,7 +2,11 @@ a{
     color:#ffffff;   
 }
 a:hover{
-    text-decoration:none;   
+    text-decoration:none; 
+    color:#ff0000;
+}
+li#anon-personalbar{
+    line-height:20px;   
 }
 body{
     color:#000000;
@@ -19,7 +23,16 @@ small{
     margin-bottom:0;   
 }
 #content .listing p{
-    margin-bottom:0;   
+    margin-bottom:0; 
+    color: #000000;
+}
+#listing-info h2{
+    color:#ff0000;  
+    font-size:13px;
+}
+.listing #listing-info dt,
+.listing #listing-info dd{
+    color:#5d5d5d;
 }
 #viewlet-above-content-body{
     display:none;   
@@ -27,12 +40,46 @@ small{
 #content .documentFirstHeading{
     font-family: 'Montaga', serif;
     font-size:18px;
+    color:#ff0000;
 }
 #portal-globalnav{
     font-family: 'PT Serif Caption', serif;   
 }
 #portal-globalnav li#portaltab-news,#portal-globalnav li#portaltab-events{
     display:none;   
+}
+ul#portal-personaltools{
+    height:26px;   
+}
+ul#portal-languageselector{
+    position: absolute;   
+    text-align: center;
+    width: 65px;
+}
+ul#portal-languageselector li a{
+    color:#000000 !important;
+}
+ul#portal-languageselector:hover li{
+    display:block
+}
+ul#portal-languageselector li{
+    display:none; 
+}
+ul#portal-languageselector li:hover{
+    background:#0000ff;
+    color:#ffffff;
+}
+ul#portal-languageselector li.currentLanguage{
+    display:block;  
+}
+.section-cover-bottom-front-page #portal-column-content{
+    background:none;
+}
+.listing-summary{
+    padding:0 2%   
+}
+#portal-column-content{
+    background-color: rgba(170, 169, 169, 0.5);
 }
 .portletNews p a{
     color:#000000;  
@@ -50,7 +97,7 @@ small{
 }
 #main{
     margin:0;   
-    background:url("img/krain_background.png");
+    background:#000000 url("img/krain_background.png") no-repeat center;
     background-attachment:fixed;
     padding:2% 0;
 }
@@ -58,7 +105,6 @@ small{
     color:#ff0000;
     font-family: 'Montaga', serif;
     font-size:14px;
-    font-style: italic;
 }
 #content-core p{
     font-family: 'Roboto', sans-serif;
@@ -135,6 +181,8 @@ dl.actionMenu.activated dd{
     color:#ffffff;  
     font-size:14px;
     font-family: 'Roboto', sans-serif;
+    text-shadow: none;
+    margin-top: 3%;
 }
 #doormat-container dl{
     overflow:auto;   
@@ -151,6 +199,7 @@ dl.actionMenu.activated dd{
 }
 .footer{
     background: linear-gradient(to left, #ff0000 50%, #ffffff 50%);
+    background:-webkit-linear-gradient(left, #ffffff 50%,#ff0000 1%);
     box-shadow:none;
     border-top:0;
 }
@@ -164,10 +213,6 @@ dl.actionMenu.activated dd{
 .portletNews .portletHeader a{
     font-size:19px;  
     font-family: 'Montaga', serif;
-}
-div.cell{
-    position:static;   
-    margin:0;
 }
 #box{
     position:relative;   
@@ -184,7 +229,7 @@ div.cell{
     background:#3F3E3D;
     position:absolute;
     width:100%;
-    bottom:13px;
+    bottom:12px;
 }
 div.width-full{
     left:0;
@@ -209,6 +254,7 @@ div.width-full{
 }
 #portal-personaltools{
     background:#000000;
+    right: 100px;
 }
 #portal-personaltools a{
     color:#ffffff;
@@ -223,12 +269,13 @@ div.width-full{
     height: 40px;
     clear: none;
     float: left;
-    margin-top: 71px;
+    margin-top: 67px;
 }
 #portal-globalnav li{
-    max-width:100px;
-    height: 40px;
-    display: inline-block;
+    display: table-cell;
+    max-width: 100px;
+    padding: 4px 0;
+    vertical-align: middle;
 }
 #portal-globalnav li:last-of-type{
     border-right:0;
@@ -239,19 +286,20 @@ div.width-full{
 #portal-globalnav li.plain a,
 #portal-globalnav li.selected a,
 #portal-globalnav li.selected a:hover{
-    background:#3f3e3d;
-    color:#ffffff;
-    padding:0;
-    text-align:center;
-    text-decoration:none;
+    background: none repeat scroll 0 0 #3F3E3D;
+    border-right: 1px solid #FFFFFF;
+    border-top: 0 none;
+    color: #FFFFFF;
+    display: table-cell;
+    font-size: 12px;
+    height: 32px;
+    line-height: 14px;
+    margin: 4px 0;
     min-width: 70px;
-    border-top:0;
-    font-size:12px;
-    padding:0 4px;
-    border-right:1px solid #ffffff;
-    height:32px;
-    margin:4px 0;
-    line-height:14px;
+    padding: 0 4px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
 }
 #portal-globalnav li.selected a{
     background:#ff0000;
@@ -277,7 +325,19 @@ div.width-full{
 dl.portlet ul.navTreeLevel0 > .navTreeItem{
     border:0;   
 }
-dl.portlet dt.portletHeader{
+dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:hover{
+    color:#ffffff;   
+}
+#content a:link, dl.portlet a:link,a:link, a:visited{
+    color:#ffffff !important;  
+    font-weight:normal;
+    letter-spacing: 0.5px;
+    border-bottom:none;
+}
+#content a:hover, dl.portlet a:hover{
+    color:#000000 !important;   
+}
+.portletNavigationTree dt.portletHeader{
     background:#0F456A; 
     line-height: 36px;
     font-size: 18px;
@@ -286,6 +346,20 @@ dl.portlet dt.portletHeader{
     padding: 0.42em 1em;
     border-top-left-radius:8px;
     border-top-right-radius:8px;
+    width:auto;
+    height:auto;
+}
+dl.portlet dt.portletHeader{
+    line-height: 36px;
+    font-size: 18px;
+    color: #FF0000;
+    font-family: 'Montaga', serif;
+    padding: 0.42em 1em;
+    background:none;
+}
+.portletAgentInformation .portletItem .agent_title, .portletAgentInformation .portletItem .agency_name{
+    color:#5e5e5e;
+    font-weight:normal;
 }
 .section-front-page dl.portlet dt.portletHeader{
     background:none; 
@@ -295,18 +369,6 @@ dl.portlet dt.portletHeader{
 }
 #portal-column-one{
     margin-bottom:1%;   
-}
-#portal-column-one,#portal-column-two{
-    margin-left:2%;       
-}
-.section-search-properties #content,
-.section-latest-listings #content,
-.section-listing-collection #content{
-    margin:0; 
-    padding: 1% 4%;
-}
-#portal-column-content{
-    background-color: rgba(170, 169, 169, 0.5);   
 }
 .collapse{
     height:auto;   
@@ -322,31 +384,36 @@ dl.portlet dt.portletHeader{
     padding:0;
     margin:1% 0 0 0;
 }
+.listing-summary #search-form dd.formPanel{
+    border:1px solid #D1D1D1;   
+}
 .listing-summary #search-form .form-rows .field {
     margin:1% 0 0 0;
     padding:0;
 }
-.listing-summary #search-form .form-rows #formfield-form-widgets-location_type{ 
+.listing-summary #search-form .form-row-tabbed .field{ 
+    margin-top:0;
     padding: 8px 10px;
-    border: 1px solid #D1D1D1;
 }
 #content ul.formTabs, #content-core ul.formTabs {
-    background: none;
+    background: #000000;
     border: medium none;
     margin-bottom: 0;
     margin-top: 12px;
+    font-size:13px;
+    border-top-left-radius:0;
+    border-top-right-radius:0;
 }
 #content-views a, #content li.formTab a, #content-core li.formTab a {
-    background:#D2DB81;
+    background:#000000;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
-    box-shadow: 0.4em 0.2em 0.7em #CCCCCC;
-    color: #4C432D;
+    color: #000000;
 }
 .listing-summary #search-form .form-rows {
     border-top: 1px solid #D1D1D1;
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 1%;
     padding: 0;
 }
 .listing-summary #search-form .form-row-listing-type,
@@ -384,8 +451,11 @@ dl.portlet dt.portletHeader{
 #content li.formTab a.selected,
 #content li.formTab a:hover,
 #content-core li.formTab a.selected, #content-core li.formTab a:hover{
-    background:#40631F;
-    color: #F7F5E9;  
+    background:#ff0000;
+    color: #ffffff !important;  
+}
+#formfield-form-widgets-listing_type .horizontal{
+    display:none;   
 }
 .listing-summary #search-form .form-row-price #formfield-form-widgets-location_city #form-widgets-location_city{
     width:90%;   
@@ -394,8 +464,7 @@ dl.portlet dt.portletHeader{
 .field input[type="text"]{
     padding:4px 0;   
 }
-.listing-summary #search-form .form-rows #formfield-form-widgets-location_type .horizontal,
-#formfield-form-widgets-listing_type .horizontal{
+.listing-summary #search-form .form-row-tabbed .formPanel .field .horizontal{
     display:none;   
 }
 .form-row-tabbed dd.formPanel{
@@ -417,8 +486,9 @@ dl.portlet dt.portletHeader{
     background-color:rgba(170, 169, 169, 0.5);
 }
 .content_box{
-    background:linear-gradient(#ffffff, #c1c1c1); 
-    margin:0 10%;
+    background:linear-gradient(#ffffff, #c1c1c1);
+    background:-webkit-linear-gradient(#ffffff, #c1c1c1);
+    margin:0 10% 5%;
 }
 .content_box:first-of-type{ 
     margin-top:7%;
@@ -427,30 +497,30 @@ dl.portlet dt.portletHeader{
     margin-bottom:7%;
 }
 #content .content_box  p{
-    font-family: 'Roboto', sans-serif;
-    font-size:18px;
+    color: #000000;
+    display: table;
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
     text-transform: uppercase;
-    color:#000000;
-    text-align:center;
-    overflow:auto;
-    position:relative;
+    width: 100%;
 }
 #content .content_box  p a{
-    color:#000000;
-    position:absolute;
-    left: 32%;
-    right: 0;
-    top: 30%;
-    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff,
-    0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff,
-    -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-    3px 5px 3px #000000;
+    color: #000000 !important;
+    display: table-cell;
+    line-height: normal;
+    text-shadow: 2px 0 0 #FFFFFF, -2px 0 0 #FFFFFF, 0 2px 0 #FFFFFF, 0 -2px 0 #FFFFFF, 1px 1px #FFFFFF, -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 3px 5px 3px #000000;
+    vertical-align: middle;
+    width: 100%;
 }
 #content .content_box img{
-    float:left;   
+    float:left;  
+    max-width:100px;
 }
 #content p, #content table, #content dl, dl.portlet p, dl.portlet{
-    margin-bottom:5%;   
+    margin-bottom:0%;  
+    font-size:13px;
 }
 .width-5 div.position-10 .galleria-container img{
     height:110px !important;
@@ -477,20 +547,59 @@ dl.portlet dt.portletHeader{
     padding:0;   
     margin:0; 
 }
+.portletAgentInformation .portletItem .contact_details dt,
+.portletAgentInformation .portletItem .contact_details dd{
+    font-size:11px;
+}
+.portletAgentInformation .portletItem h3{
+    margin-top:10%; 
+    color:#FF0000;
+}
+.portletAgentInformation .portletItem .contact_details dt{
+    color:#FF0000; 
+}
+.portletAgentInformation .portletItem .contact_details dd{
+    color:#5E5E5E; 
+}
+.portletAgentContact .horizontal{
+    color:#ff0000;   
+}
 .toolkit-slider{
     padding:0 35px;     
 }
-table.listing tr.odd th, table.listing tr.even th{
-    background: #40631F;
-    color: #D2DB81;
+#content{
+    margin: 3% 5%;
+}
+.listing #listing-info dl{
+    margin:0;
+    padding:0;
+    border:0;
+}
+.listing #listing-info dl.workflow{
+    border-bottom:1px dotted #5D5D5D;
+    margin-bottom: 2%;
+    padding-bottom: 5%;
+}
+table.listing th{
+    background: #ff0000;
+    color: #ffffff;
     line-height: 26px;
 }
-#portal-column-two{
-    margin:0;   
+table.listing tbody tr td,
+table.listing tbody tr.odd td{
+    background: #000000;   
+    color:#ffffff;
 }
-#portal-column-two .portletWrapper .portlet{
+.state-published{
+    color:#ffffff !important;
+}
+#portal-column-one .portletWrapper .portlet{
     border-radius: 8px;
     box-shadow: 0 0 13px -1px #000000;
+    color:#ffffff;
+    background-color: rgba(170, 169, 169, 0.5);
+}
+#portal-column-two .portletWrapper .portlet{
     color:#ffffff;
     background-color: rgba(170, 169, 169, 0.5);
 }
@@ -498,7 +607,6 @@ table.listing tr.odd th, table.listing tr.even th{
     color:#ffffff;
 }
 #portal-column-two .portletAgentInformation .portletItem{
-    padding: 10% 15% 5%;
     margin-left:0;
 }
 .portletAgentContact dd{
@@ -506,8 +614,7 @@ table.listing tr.odd th, table.listing tr.even th{
     margin-left:0;
 }
 .row .field{
-    margin:0 4% 0 4%; 
-
+    margin: 0; 
 }
 .portletItem form{
     padding-top:5%;   
@@ -524,7 +631,7 @@ dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd{
     overflow:auto;   
 }
 .formHelp{
-    color: #FFFFFF;
+    color: #5E5E5E;
 }
 #listing-info {
     float: right;
@@ -550,6 +657,9 @@ select.choice-field {
 .galleria-info-text{
     padding:8% 0;  
     background:none; 
+}
+.cover-contentbody-tile{
+    padding:2.5%; 
 }
 .cover-collection-tile{
     padding:5%;   
@@ -579,15 +689,45 @@ select.choice-field {
     font-size:18px;
     font-family: 'Roboto', sans-serif;
 }
+.listing a#agentquote{
+    color:#ff0000 !important;   
+}
+.galleria-thumbnails .galleria-image img {
+    height: 40px !important;
+    width: 60px !important;
+}
+.galleria-thumbnails .galleria-image {
+    height: 40px !important;
+    width: 60px !important;
+}
+#portal-column-two .portletWrapper{ 
+    margin-bottom: 5%;
+    }
+#content .listing-summary figure{
+    width:15%;   
+}
+.contentbody{
+    padding:2%;   
+}
 @media (min-width: 1200px){
     #portal-columns .row,#header .row,.footer .row,div.row{
         width:1080px;   
     }
     #portal-column-two .portletWrapper{
-    padding: 0 7%;   
+        padding: 0 7%; 
+        margin-bottom: 5%;
     }
     .container{
         width:100%;   
+    }
+    div.position-3\:4{
+        margin-left:-34%;   
+    }
+    #portal-column-content.width-3\:4.position-0{
+        width:65%
+    }   
+    #portal-column-content.width-3\:4.position-1\:4{
+        width:72%;   
     }
     #listing-info {
         width: 40%;
@@ -624,10 +764,7 @@ select.choice-field {
     div.width-full{
         width:100%;
     }
-    div.width-3\:4{
-        width:65%;
-    }
-    div.width-1\:4{
+    div#portal-column-two.width-1\:4{
         width:35%;
     }
     select {
@@ -638,21 +775,6 @@ select.choice-field {
     }
     #portal-globalnav{
         width: 82.8%;
-    }
-    #content .width-5{
-        width:32.3%;
-    }
-    #content .position-5 {
-        margin-left:1.5%;
-    }
-    #content .position-10 {
-        margin-left:1.5%;
-    }
-    #content .width-10{
-        width:66.1%;   
-    }
-    #content .width-16{
-        width:100%;   
     }
     .form-row-listing-type .field span.option {
         clear: none;
@@ -677,13 +799,30 @@ select.choice-field {
     .listing-summary #search-form form .form-row-other .field span.option{
         width: 28%;   
     }
+    div.width-5 {
+        width: 32%;
+    }
+    #content .width-16.position-0{
+        margin-left: -100%;
+        width: 100%;
+    }
+    #content .width-10.position-0{
+        margin-left: -100%;
+        width: 66%;
+    }
+    #content .width-5.position-5{
+        margin-left: -66%;  
+    }
+    #content .width-5.position-0{
+        margin-left: -100%;   
+    }
+    #content .width-5.position-10{
+        margin-left: -32%;   
+    }
 }
 @media (min-width: 980px) and (max-width:1199px){ 
     #portal-columns.row,#header .row,.footer .row,div.row{
         width:870px;   
-    }
-    #portal-column-one{
-        width:33%;
     }
     .container{
         width:100%;   
@@ -691,12 +830,18 @@ select.choice-field {
     #portal-column-two .portletWrapper{
     padding: 0 7%;   
     }
-    div.width-3\:4{
-        width:65%;
+    #portal-column-content.width-3\:4.position-0{
+        width:65%
+    }   
+    #portal-column-content.width-3\:4.position-1\:4{
+        width:72%;   
     }
-    div.width-1\:4{
+    div#portal-column-two.width-1\:4{
         width:35%;
     }
+    div.position-3\:4 {
+    margin-left: -34%;
+}
     .footer #doormat-container .column-0{
         width:55%;   
     }
@@ -716,7 +861,8 @@ select.choice-field {
         width:100%;
     }
     #portal-globalnav{
-        width: 78.6%;
+        width: 100%;
+        margin-top:0;
     }
         #listing-info {
         width: 40%;
@@ -763,16 +909,20 @@ select.choice-field {
     }
     #portal-column-content{
         width:100%; 
+        margin-left:0;
+        left:0;
     }
     #portal-column-one{
         width:100%;
         margin-left: 0;
         margin-top: 20px;
+        left:0;
     }
     #portal-column-two{
         width:100%;
         margin-left: 0;
         margin-top: 20px;
+        left:0;
     }
     .container{
         width:100%;   
@@ -862,17 +1012,21 @@ select.choice-field {
         width:100%;   
     }
     #portal-column-content{
-        width:100%; 
+        left: 0;
+        margin-left: 0;
+        width: 100%; 
     }
     #portal-column-one{
         width:100%;
         margin-left: 0;
         margin-top: 20px;
+        left:0;
     }
     #portal-column-two{
-        width:100%;
+        left: 0;
         margin-left: 0;
         margin-top: 20px;
+        width: 100%;
     }
     .container{
         width:100%;   
