@@ -24,11 +24,20 @@ small{
 }
 #content .listing p{
     margin-bottom:0; 
+    color: #ff0000;
+}
+#content .listing .visualClear p{
+    margin-bottom:0; 
     color: #000000;
+}
+.agency_logo{
+    text-align: center;
 }
 #listing-info h2{
     color:#ff0000;  
     font-size:13px;
+    line-height:normal;
+    padding-bottom: 5%;
 }
 .listing #listing-info dt,
 .listing #listing-info dd{
@@ -75,8 +84,8 @@ ul#portal-languageselector li.currentLanguage{
 .section-cover-bottom-front-page #portal-column-content{
     background:none;
 }
-.listing-summary{
-    padding:0 2%   
+.section-cover-front-page #portal-column-content{
+    background:none;
 }
 #portal-column-content{
     background-color: rgba(170, 169, 169, 0.5);
@@ -105,6 +114,8 @@ ul#portal-languageselector li.currentLanguage{
     color:#ff0000;
     font-family: 'Montaga', serif;
     font-size:14px;
+    font-weight: normal;
+    padding: 5% 0;
 }
 #content-core p{
     font-family: 'Roboto', sans-serif;
@@ -153,7 +164,7 @@ ul.submenu li a{
 #portal-globalnav ul.submenu li{
     border-bottom: 1px solid #C1C1C1;
     line-height:22px;
-    height: 23px;
+    padding:0;
     display: block;
     width:100%;   
     border-right:0;
@@ -350,12 +361,64 @@ dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:hover{
     height:auto;
 }
 dl.portlet dt.portletHeader{
-    line-height: 36px;
     font-size: 18px;
     color: #FF0000;
     font-family: 'Montaga', serif;
-    padding: 0.42em 1em;
+    padding: 0.42em 1em 0.2em;
     background:none;
+    border-bottom: 1px dashed #5E5E5E;
+}
+.portletAgentContact div.formControls{
+    text-align: center;
+    margin-bottom: 0;
+}
+#recent-listings h2.tileHeadline{ 
+    border-bottom:1px dashed #1e1e1e;
+    margin-bottom: 3%;
+    line-height: 26px;
+}
+.portletQuickSearch .separator{
+    display:none;
+}
+#recent-listings h2.tileHeadline a{
+    color:#FF0000 !important;  
+}
+#content .listing-summary figure a{
+    background:#FFFFFF;
+}
+.portletAgentContact form{
+    margin-bottom:0;   
+}
+.portletAgentContact textarea,
+.portletAgentContact input[type="text"],
+.portletAgentContact input[type="password"],
+.portletAgentContact input[type="datetime"],
+.portletAgentContact input[type="datetime-local"],
+.portletAgentContact input[type="date"],
+.portletAgentContact input[type="month"],
+.portletAgentContact input[type="time"],
+.portletAgentContact input[type="week"],
+.portletAgentContact input[type="number"],
+.portletAgentContact input[type="email"],
+.portletAgentContact input[type="url"],
+.portletAgentContact input[type="search"],
+.portletAgentContact input[type="tel"],
+.portletAgentContact input[type="color"],
+.portletAgentContact .uneditable-input{
+    border:0;
+    border-radius: 0;
+    box-shadow:none;
+    margin-bottom: 10%;
+}
+.portletAgentContact input[type="submit"]{
+    width: 100px;
+    color: #FF0000;
+    font-weight: bold;  
+    box-shadow: 0 0 10px #5C5C5C;
+}
+table.listing tr.odd th,
+table.listing tr th{
+    border-right:3px solid;   
 }
 .portletAgentInformation .portletItem .agent_title, .portletAgentInformation .portletItem .agency_name{
     color:#5e5e5e;
@@ -552,8 +615,11 @@ dl.portlet dt.portletHeader{
     font-size:11px;
 }
 .portletAgentInformation .portletItem h3{
-    margin-top:10%; 
+    margin-top:5%; 
     color:#FF0000;
+}
+.contact_details{
+    margin-bottom:0;   
 }
 .portletAgentInformation .portletItem .contact_details dt{
     color:#FF0000; 
@@ -567,8 +633,14 @@ dl.portlet dt.portletHeader{
 .toolkit-slider{
     padding:0 35px;     
 }
+.section-cover-bottom-front-page #content{
+    margin: 0;
+}
+.section-cover-front-page #content{
+    margin: 0;
+}
 #content{
-    margin: 3% 5%;
+    margin: 3%;
 }
 .listing #listing-info dl{
     margin:0;
@@ -592,6 +664,13 @@ table.listing tbody tr.odd td{
 }
 .state-published{
     color:#ffffff !important;
+}
+#main #portal-column-two .portletWrapper .portletQuickSearch{
+    background-color: #E7E7E7;   
+}
+#main #portal-column-two .portletWrapper .portletQuickSearch .label,
+#main #portal-column-two label{
+    color:#000000;   
 }
 #portal-column-one .portletWrapper .portlet{
     border-radius: 8px;
@@ -625,7 +704,7 @@ table.listing tbody tr.odd td{
 }
 dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd{
     margin:0;  
-    padding: 0 5% 5%;
+    padding:5%;
 }
 .portletAgentInformation .portletItem .contact_details{
     overflow:auto;   
@@ -709,6 +788,61 @@ select.choice-field {
 .contentbody{
     padding:2%;   
 }
+#portal-column-content.width-3\:4.position-0{
+    margin-left:-100%;
+}
+.galleria-stage{
+    top: 0;
+    left: 0;
+}
+.galleria-info-link{
+    display:none;   
+}
+.galleria-container img {
+    left: 0 !important;
+    top:0 !important;
+    width: 100% !important;
+}
+.listing #listing-images{
+    background:#FFFFFF;   
+}
+.listing .galleria-counter{
+    display:none !important;   
+}
+.galleria-container {
+    border: 0;
+}
+.portletQuickSearch select {
+    text-align: center;
+}
+.portletQuickSearch .formControls{
+    text-align:center;
+}
+.portletQuickSearch .formControls #form-buttons-search{
+    width: 100px;
+    color: #FF0000;
+    font-weight: bold;  
+    box-shadow: 0 0 10px #AAAAAA;
+}
+.portletQuickSearch #formfield-form-widgets-price_min{
+    clear: none;
+    float: left;
+}
+.portletQuickSearch #formfield-form-widgets-price_max{
+    clear: none;
+    float: left;
+}
+.portletQuickSearch select,
+.portletQuickSearch .field input[type="text"]{
+    box-shadow: 0 0 10px #AAAAAA;
+    background-color: #E7E7E7; 
+    border: 0;
+    border-radius: 5px;
+    color:#AAAAAA;
+}
+.portletQuickSearch #formfield-form-widgets-location_state{
+    padding-top: 5%;   
+}
 @media (min-width: 1200px){
     #portal-columns .row,#header .row,.footer .row,div.row{
         width:1080px;   
@@ -724,19 +858,23 @@ select.choice-field {
         margin-left:-34%;   
     }
     #portal-column-content.width-3\:4.position-0{
-        width:65%
+        width:65%;
     }   
     #portal-column-content.width-3\:4.position-1\:4{
         width:72%;   
     }
     #listing-info {
-        width: 40%;
+        width: 45%;
     }
     .listing #listing-images {
-        width: 55%;
+        width: 50%;
+        height: 290px;
+        padding: 1%;
+    }
+    .listing #listing-images #galleria {
+        height: 100%;
     }
     .galleria-stage {
-        left: 0;
         width: 100%;
     }
     .galleria-container .galleria-stage .galleria-image {
@@ -748,6 +886,7 @@ select.choice-field {
     }
     .galleria-container {
         width: 100% !important;
+        height: 100% !important;
     }
     .footer #doormat-container .column-0{
         width:45%;   
@@ -770,6 +909,23 @@ select.choice-field {
     select {
         width: 49%;
     }
+    .portletQuickSearch select {
+        width: 40%;
+        text-align: center;
+    }
+    .portletQuickSearch #form-widgets-beds-min,
+    .portletQuickSearch #form-widgets-baths-min,
+    .portletQuickSearch #form-widgets-lot_size-min,
+    .portletQuickSearch #form-widgets-interior_area-min{
+        margin-right: 18%;
+    }
+    .portletQuickSearch #formfield-form-widgets-price_min{
+        margin-right: 19%;
+        width: 40%;
+    }
+.portletQuickSearch #formfield-form-widgets-price_max{
+        width: 40%;
+    }
     #portal-colophon{
         width:100%;
     }
@@ -786,9 +942,6 @@ select.choice-field {
     }
     .field input[type="text"] {
         width: 99%;
-    }
-    select {
-        width: 47%;
     }
     .form-row-listing-type .field span.option {
         width: 49;
