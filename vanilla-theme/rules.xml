@@ -6,6 +6,18 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"
     >
     
+    <copy
+        attributes="class"
+        css:content="#topnav-collapse"
+        css:theme="#portal-globalnav"
+    />
+    
+    <copy
+        attributes="class"
+        css:content="body"
+        css:theme="div#globalwrapper"
+    />
+    
     <replace
         css:theme-children="div#header"
         css:content="div#portal-top"
