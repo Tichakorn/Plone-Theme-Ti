@@ -1,0 +1,15 @@
+/*-----------------------------------colophon---------------------------------------*/
+#portal-colophon p {
+    margin: 0;
+    padding: 30px 3% 0;
+    color:#ffffff;
+}
+.colophonWrapper{
+    height: 110px;
+    margin: 0 auto;
+    width: 1080px;
+}
+#portal-colophon{   
+    background:#597992;   
+}
+/*-----------------------------------doormat---------------------------------------*/
