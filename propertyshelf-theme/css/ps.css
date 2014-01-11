@@ -1,15 +1,358 @@
 /*-----------------------------------colophon---------------------------------------*/
 #portal-colophon p {
     margin: 0;
-    padding: 30px 3% 0;
+    padding: 30px 1% 40px;
     color:#ffffff;
+    font-family: 'Istok Web', sans-serif;
+    font-size:12px;
+    text-shadow: none;
 }
 .colophonWrapper{
-    height: 110px;
+    min-height: 110px;
     margin: 0 auto;
-    width: 1080px;
+    
 }
 #portal-colophon{   
     background:#597992;   
 }
 /*-----------------------------------doormat---------------------------------------*/
+.footer{
+    background:none;   
+    border-top:3px solid #5b7c96;
+    font-family: 'Istok Web', sans-serif;
+}
+#doormat-container h3{
+    color:#597992;   
+}
+#doormat-container a{
+    color:#000000;   
+}
+#doormat-container h3,
+#doormat-container a{
+    font-size:12px;   
+    font-weight: bold;
+    line-height: 30px;
+    margin: 0;
+}
+#doormat-container.columns-6 .column-5{
+    bottom: 0;
+    position: absolute;
+    right: 0;   
+}
+#doormat-container.columns-6 .column-5 img{
+    margin-left: 3%;   
+}
+.column-0 .doormatSection .doormatSectionBody{
+    width:100%;   
+}
+/*-----------------------------------breadcrumbs---------------------------------------*/
+#portal-breadcrumbs{
+    display:none;  
+    font-family: 'Istok Web', sans-serif;
+    font-size:12px;
+}
+#portal-breadcrumbs a{
+    color:#000000;
+}
+#breadcrumbs-current{
+    color:#ff0000;   
+}
+/*-----------------------------------navigation---------------------------------------*/
+#portal-globalnav li.plain a, #portal-globalnav li.selected a, #portal-globalnav li.selected a:hover{
+    font-weight: bold; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    color: #000000;
+}
+/*-----------------------------------body---------------------------------------*/
+#content{
+    margin:0;   
+}
+/*-----------------------------------cover---------------------------------------*/
+.tile-center{
+    text-align:center;   
+}
+#content .tile-center p{  
+    font-family: 'Sanchez', serif;
+    font-size:24px;
+    color:#597a94;
+    font-style: italic;
+    font-weight: bold;
+}
+.blue-box{
+    background:#005a9a;   
+}
+.orange-box{
+    background:#f37200;
+}
+.green-box{
+    background:#469712;
+}
+.purple-box{
+    background:#88007b;
+}
+.yellow-box{
+    background:#d4be00;   
+}
+.blue-box,
+.orange-box,
+.green-box,
+.purple-box,
+.yellow-box{
+    display: table-cell;
+    height: 105px;
+    text-align: center;
+    vertical-align: middle;
+}
+#content .blue-box a,
+#content .orange-box a,
+#content .green-box a,
+#content .purple-box a,
+#content .yellow-box a{
+    text-align:center;   
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size:18px;
+    font-weight: bold;
+    color:#ffffff;
+}
+.leftbody .image-inline{
+    border: 1px solid #000000;
+    height: 250px;
+    padding: 2%;
+    width: 90%;   
+}
+#content .leftbody a{ 
+    color:#597a94;
+}
+#content .rightbody a{
+    font-weight: bold; 
+    color:#597a94;
+}
+.rightbody{
+    margin-bottom:6%;   
+}
+.rightbody .image-inline{
+    width: 25%;
+}
+.rightbody h3{
+    line-height:1em;
+}
+.rightbody img.image-inline{
+    border: 1px solid #000000;
+    float: left;
+    padding: 3%;
+    width: 100%;
+}
+#content .leftbody h3{
+    line-height: 3em;
+}
+#content .rightbody h3{
+    margin-bottom:1%;
+}
+#content .rightbody h3,#content .rightbody p{
+    padding-left:30%;
+}
+#content .rightbody p.image-inline{
+    padding-left:0;
+}
+#content .leftbody h3,#content .rightbody h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size:15.5px;
+}
+#content .leftbody p,#content .rightbody p{
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+}
+/*-----------------------------------@media---------------------------------------*/
+@media (min-width: 1200px){
+    #doormat-container.columns-6 .doormatColumn{
+        width:16%;   
+    } 
+    .colophonWrapper{
+        width: 1080px;
+    }
+    .documentEditable div.position-0 {
+        margin-left: -100%;
+    }
+    .documentEditable div.position-3 {
+        margin-left: -79%;
+    }
+    .documentEditable div.position-6 {
+        margin-left: -58%;
+    }
+    .documentEditable div.position-9 {
+        margin-left: -37%;
+    }
+    .documentEditable div.position-12 {
+        margin-left: -16.5%;
+    }
+    .blue-box, .orange-box, .green-box, .purple-box, .yellow-box{
+        min-width:178px;   
+    }
+    .rightbody img.image-inline{
+        height: 93px;
+    }
+}
+@media (min-width: 980px) and (max-width:1199px){
+    #doormat-container.columns-6 .doormatColumn{
+        width:20%;   
+    }
+    .colophonWrapper{
+        width: 870px;
+    }
+    .documentEditable div.position-0 {
+        margin-left: -100%;
+    }
+    .documentEditable div.position-3 {
+        margin-left: -79%;
+    }
+    .documentEditable div.position-6 {
+        margin-left: -58%;
+    }
+    .documentEditable div.position-9 {
+        margin-left: -37%;
+    }
+    .documentEditable div.position-12 {
+        margin-left: -16.5%;
+    }
+    .blue-box, .orange-box, .green-box, .purple-box, .yellow-box{
+        width:100%;   
+    }
+    .rightbody img.image-inline{
+        height: 93px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px){
+    #doormat-container.columns-6 .doormatColumn{
+        width:25%;   
+    }
+    .colophonWrapper{
+        width: 680px;
+    }
+    .footer .row{
+        width: 680px;   
+    }
+    .documentEditable div.position-0 {
+        margin-left: -100%;
+    }
+    .documentEditable div.position-3 {
+        margin-left: -80%;
+    }
+    .documentEditable div.position-6 {
+        margin-left: -60%;
+    }
+    .documentEditable div.position-9 {
+        margin-left: -40%;
+    }
+    .documentEditable div.position-12 {
+        margin-left: -20%;
+    }
+    div.width-3{
+        width:20%;   
+    }
+    .blue-box, .orange-box, .green-box, .purple-box, .yellow-box{
+        width:100%;   
+    }
+    .rightbody img.image-inline{
+        height: 80px;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px){
+    #doormat-container.columns-6 .doormatColumn{
+        width:50%;   
+    }
+    .colophonWrapper{
+        width: 400px;
+    }
+    .footer .row{
+        width: 400px;   
+    }
+    .documentEditable div.position-0 {
+        margin-left: -100%;
+    }
+    .documentEditable div.position-3 {
+        margin-left: -65%;
+    }
+    .documentEditable div.position-6 {
+        margin-left: -30%;
+    }
+    .documentEditable div.position-9 {
+        margin-left: -85%;
+        margin-top: 30%;
+    }
+    .documentEditable div.position-12 {
+        margin-left: -46%;
+        margin-top: 30%;
+    }
+    .footer #doormat-container .column-1{
+        min-height:240px;   
+    }
+    div.width-3{
+        width:30%;   
+    }
+    .documentEditable #content .row:last-of-type .position-0{
+        margin: 0;
+        position: static;
+        width: 100%;
+    }
+    .documentEditable #content .row:last-of-type .position-7{
+        margin: 5% 0 0;
+        position: static;
+        width: 100%;
+    }
+    .blue-box, .orange-box, .green-box, .purple-box, .yellow-box{
+        width:100%;   
+    }
+    .rightbody img.image-inline{
+        height: 93px;
+    }
+}
+@media (max-width: 480px){
+    #doormat-container.columns-6 .doormatColumn{
+        width:50%;   
+    }
+    .colophonWrapper{
+        width: 400px;
+    }
+    .footer .row{
+        width: 400px;   
+    }
+    .documentEditable div.position-0 {
+        margin-left: -100%;
+    }
+    .documentEditable div.position-3 {
+        margin-left: -65%;
+    }
+    .documentEditable div.position-6 {
+        margin-left: -30%;
+    }
+    .documentEditable div.position-9 {
+        margin-left: -85%;
+        margin-top: 30%;
+    }
+    .documentEditable div.position-12 {
+        margin-left: -46%;
+        margin-top: 30%;
+    }
+    div.width-3{
+        width:30%;   
+    }
+    .documentEditable #content .row:last-of-type .position-0{
+        margin: 0;
+        position: static;
+        width: 100%;
+    }
+    .documentEditable #content .row:last-of-type .position-7{
+        margin: 5% 0 0;
+        position: static;
+        width: 100%;
+    }
+    .blue-box, .orange-box, .green-box, .purple-box, .yellow-box{
+        width:100%;   
+    }
+    .rightbody img.image-inline{
+        height: 93px;
+    }
+}
