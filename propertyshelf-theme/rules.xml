@@ -6,6 +6,16 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"
     >
     
+    <drop
+        css:content=".toolkit-slider"
+    />
+    
+    <replace
+        css:theme-children="#slider"
+        css:content=".toolkit-slider"
+        method="raw"
+    />
+    
     <copy
         attributes="class"
         css:content="#topnav-collapse"
