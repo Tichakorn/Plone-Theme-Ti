@@ -482,7 +482,7 @@ dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd{
 }
 #portal-column-two .portletWrapper{ 
     margin-bottom: 5%;
-    }
+}
 .row{
     margin:0;   
 }
@@ -490,7 +490,6 @@ dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd{
     margin: 0; 
 }
 #recent-listings h2.tileHeadline{ 
-    margin-bottom: 3%;
     line-height: 26px;
 }
 small{
@@ -498,6 +497,12 @@ small{
 }
 select.choice-field {
     width: 100%;
+}
+sup sup,
+sub sub,
+sup sub,
+sub sup{
+    font-size:100%;
 }
 ul.submenu{
     margin:0;  
